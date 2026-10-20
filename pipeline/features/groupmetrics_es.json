@@ -1,0 +1,81 @@
+{
+ "lang": "es",
+ "label": "MÉTRICAS DEL GRUPO",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "g",
+   "at": 7.2,
+   "freeze": 2.2,
+   "caption": "Toma el pulso de\ntu comunidad."
+  },
+  {
+   "src": "g",
+   "a": 1.4,
+   "b": 3.5,
+   "caption": "Toca el ícono de\nmétricas en tu grupo",
+   "callout": {
+    "box": [
+     990,
+     275,
+     1165,
+     395
+    ],
+    "maxw": 420,
+    "maxh": 260,
+    "at": 1.4
+   }
+  },
+  {
+   "src": "g",
+   "a": 3.5,
+   "b": 7.0,
+   "speed": 4
+  },
+  {
+   "src": "g",
+   "a": 7.0,
+   "b": 10.5,
+   "speed": 1.3,
+   "caption": "Peticiones creadas,\nactivas y contestadas"
+  },
+  {
+   "src": "g",
+   "a": 10.5,
+   "b": 12.6,
+   "caption": "Quién pide oración\ny quién está orando"
+  },
+  {
+   "src": "g",
+   "a": 12.6,
+   "b": 14.7,
+   "caption": "El porcentaje de oraciones\ncontestadas del grupo"
+  },
+  {
+   "src": "g",
+   "a": 14.7,
+   "b": 18.9,
+   "speed": 1.6,
+   "caption": "Tus guerreros de\noración más fieles"
+  },
+  {
+   "src": "g",
+   "a": 18.9,
+   "b": 21.7,
+   "caption": "Por qué está orando\ntu grupo"
+  },
+  {
+   "src": "g",
+   "a": 21.7,
+   "b": 25.0,
+   "speed": 1.3,
+   "caption": "Oraciones contestadas,\nmes a mes"
+  },
+  {
+   "src": "g",
+   "at": 21.0,
+   "freeze": 2.8,
+   "caption": "Entiende sus necesidades.\nSírvelos mejor."
+  }
+ ]
+}

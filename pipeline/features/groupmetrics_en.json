@@ -1,0 +1,81 @@
+{
+ "lang": "en",
+ "label": "GROUP METRICS",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "g",
+   "at": 7.4,
+   "freeze": 2.2,
+   "caption": "Get a pulse of\nyour community."
+  },
+  {
+   "src": "g",
+   "a": 1.6,
+   "b": 3.2,
+   "caption": "Tap the metrics icon\nin your crew",
+   "callout": {
+    "box": [
+     990,
+     275,
+     1165,
+     395
+    ],
+    "maxw": 420,
+    "maxh": 260,
+    "at": 1.6
+   }
+  },
+  {
+   "src": "g",
+   "a": 3.2,
+   "b": 7.2,
+   "speed": 4
+  },
+  {
+   "src": "g",
+   "a": 7.2,
+   "b": 11.2,
+   "speed": 1.3,
+   "caption": "Requests created,\nactive and answered"
+  },
+  {
+   "src": "g",
+   "a": 11.2,
+   "b": 13.6,
+   "caption": "Who's asking for prayer\nand who's praying"
+  },
+  {
+   "src": "g",
+   "a": 13.6,
+   "b": 16.0,
+   "caption": "Your crew's answered\nprayer rate"
+  },
+  {
+   "src": "g",
+   "a": 16.0,
+   "b": 20.8,
+   "speed": 1.6,
+   "caption": "Your most faithful\nprayer warriors"
+  },
+  {
+   "src": "g",
+   "a": 20.8,
+   "b": 23.2,
+   "caption": "What your crew is\npraying about"
+  },
+  {
+   "src": "g",
+   "a": 23.2,
+   "b": 26.4,
+   "speed": 1.3,
+   "caption": "Answered prayers,\nmonth by month"
+  },
+  {
+   "src": "g",
+   "at": 22.2,
+   "freeze": 2.8,
+   "caption": "Understand their needs.\nServe them better."
+  }
+ ]
+}
