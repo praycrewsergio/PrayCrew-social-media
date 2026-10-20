@@ -1,0 +1,105 @@
+{
+ "lang": "es",
+ "label": "ORACIÓN GUIADA Y VERSÍCULO DEL DÍA",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.0,
+   "caption": "¿Te quedas sin palabras\nal orar?"
+  },
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.6,
+   "caption": "Un versículo del día,\ncada día",
+   "callout": {
+    "box": [
+     40,
+     1340,
+     1130,
+     1800
+    ],
+    "maxw": 940,
+    "maxh": 420,
+    "at": 1.6
+   }
+  },
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.6,
+   "caption": "Y una oración guiada\nnueva cada día",
+   "callout": {
+    "box": [
+     40,
+     370,
+     1130,
+     700
+    ],
+    "maxw": 940,
+    "maxh": 300,
+    "at": 1.6
+   }
+  },
+  {
+   "src": "g",
+   "a": 4.5,
+   "b": 6.4,
+   "speed": 1.5
+  },
+  {
+   "src": "g",
+   "a": 6.4,
+   "b": 8.6,
+   "caption": "Empieza con quién es Dios"
+  },
+  {
+   "src": "g",
+   "a": 8.8,
+   "b": 11.0,
+   "speed": 1.2,
+   "caption": "Alábalo con reverencia"
+  },
+  {
+   "src": "g",
+   "a": 11.1,
+   "b": 12.3,
+   "caption": "Responde con confesión\ny gratitud"
+  },
+  {
+   "src": "g",
+   "a": 12.4,
+   "b": 13.6,
+   "caption": "Preséntale tus peticiones"
+  },
+  {
+   "src": "g",
+   "a": 13.8,
+   "b": 16.4,
+   "speed": 1.2,
+   "caption": "Hazlo personal con\ntus propias palabras"
+  },
+  {
+   "src": "g",
+   "a": 16.6,
+   "b": 25.0,
+   "speed": 2.5,
+   "caption": "Ora a través de la Escritura"
+  },
+  {
+   "src": "g",
+   "a": 25.6,
+   "b": 26.9,
+   "caption": "Palabras nuevas para tu\ntiempo con Dios.",
+   "hold": 0.8
+  },
+  {
+   "src": "g",
+   "at": 26.9,
+   "freeze": 2.6,
+   "caption": "Escritas y oradas por\nnuestro equipo, para ti."
+  }
+ ]
+}

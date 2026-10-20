@@ -1,0 +1,105 @@
+{
+ "lang": "en",
+ "label": "GUIDED PRAYER & VERSE OF THE DAY",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.0,
+   "caption": "Running out of words\nwhen you pray?"
+  },
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.6,
+   "caption": "A new verse of the day,\nevery day",
+   "callout": {
+    "box": [
+     40,
+     1340,
+     1130,
+     1800
+    ],
+    "maxw": 940,
+    "maxh": 420,
+    "at": 1.6
+   }
+  },
+  {
+   "src": "g",
+   "at": 1.6,
+   "freeze": 2.6,
+   "caption": "And a new guided prayer,\nevery day",
+   "callout": {
+    "box": [
+     40,
+     370,
+     1130,
+     700
+    ],
+    "maxw": 940,
+    "maxh": 300,
+    "at": 1.6
+   }
+  },
+  {
+   "src": "g",
+   "a": 2.6,
+   "b": 4.3,
+   "speed": 1.5
+  },
+  {
+   "src": "g",
+   "a": 4.3,
+   "b": 5.6,
+   "caption": "Start with who God is"
+  },
+  {
+   "src": "g",
+   "a": 5.6,
+   "b": 8.3,
+   "speed": 1.2,
+   "caption": "Praise Him with reverence"
+  },
+  {
+   "src": "g",
+   "a": 8.4,
+   "b": 10.4,
+   "caption": "Respond with confession\nand gratitude"
+  },
+  {
+   "src": "g",
+   "a": 10.5,
+   "b": 11.8,
+   "caption": "Bring your requests to Him"
+  },
+  {
+   "src": "g",
+   "a": 11.9,
+   "b": 15.6,
+   "speed": 1.2,
+   "caption": "Make it personal in\nyour own words"
+  },
+  {
+   "src": "g",
+   "a": 16.1,
+   "b": 25.0,
+   "speed": 2.5,
+   "caption": "Pray through Scripture"
+  },
+  {
+   "src": "g",
+   "a": 25.6,
+   "b": 26.9,
+   "caption": "Fresh words for your\ntime with God.",
+   "hold": 0.8
+  },
+  {
+   "src": "g",
+   "at": 26.9,
+   "freeze": 2.6,
+   "caption": "Written and prayed over\nby our team, for you."
+  }
+ ]
+}
