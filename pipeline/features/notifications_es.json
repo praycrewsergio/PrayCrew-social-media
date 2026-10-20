@@ -1,0 +1,74 @@
+{
+ "lang": "es",
+ "label": "NOTIFICACIONES DE ORACIÓN",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "nt",
+   "at": 1.5,
+   "freeze": 2.2,
+   "caption": "Cada vez que alguien ore\npor ti, lo sabrás."
+  },
+  {
+   "src": "nt",
+   "a": 1.5,
+   "b": 9.5,
+   "speed": 1.9,
+   "caption": "Historia real: una mamá\nllevaba a su hija a cirugía…"
+  },
+  {
+   "src": "nt",
+   "a": 9.5,
+   "b": 13.3,
+   "caption": "…cuando su teléfono\nempezó a iluminarse.",
+   "callout": {
+    "at": 12.0,
+    "box": [
+     20,
+     1940,
+     1150,
+     2165
+    ],
+    "maxw": 980,
+    "maxh": 260
+   }
+  },
+  {
+   "src": "nt",
+   "a": 13.3,
+   "b": 17.9,
+   "speed": 1.2,
+   "caption": "El equipo de oración de\nsu iglesia oraba por ellas."
+  },
+  {
+   "src": "nt",
+   "a": 17.9,
+   "b": 20.9,
+   "caption": "Y les enviaba palabras de ánimo.",
+   "callout": {
+    "at": 19.5,
+    "box": [
+     20,
+     1940,
+     1150,
+     2165
+    ],
+    "maxw": 980,
+    "maxh": 260
+   }
+  },
+  {
+   "src": "nt",
+   "a": 20.9,
+   "b": 22.2,
+   "hold": 2.2,
+   "caption": "Su fe se renovó.\nDios tenía el control."
+  },
+  {
+   "src": "nt",
+   "at": 22.0,
+   "freeze": 2.8,
+   "caption": "Todo porque les importó\ny fueron intencionales."
+  }
+ ]
+}

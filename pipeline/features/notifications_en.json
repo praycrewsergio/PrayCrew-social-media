@@ -1,0 +1,74 @@
+{
+ "lang": "en",
+ "label": "PRAYER NOTIFICATIONS",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "nt",
+   "at": 2.0,
+   "freeze": 2.2,
+   "caption": "Every time someone prays\nfor you, you'll know."
+  },
+  {
+   "src": "nt",
+   "a": 2.0,
+   "b": 9.8,
+   "speed": 1.9,
+   "caption": "True story: a mom walking\nher daughter into surgery…"
+  },
+  {
+   "src": "nt",
+   "a": 9.8,
+   "b": 13.6,
+   "caption": "…when her phone started lighting up.",
+   "callout": {
+    "at": 12.0,
+    "box": [
+     20,
+     1940,
+     1150,
+     2165
+    ],
+    "maxw": 980,
+    "maxh": 260
+   }
+  },
+  {
+   "src": "nt",
+   "a": 13.6,
+   "b": 24.2,
+   "speed": 2.6,
+   "caption": "Her church's prayer team\nwas praying for them."
+  },
+  {
+   "src": "nt",
+   "a": 24.2,
+   "b": 28.0,
+   "caption": "And sending encouragement.",
+   "callout": {
+    "at": 27.0,
+    "box": [
+     20,
+     1940,
+     1150,
+     2165
+    ],
+    "maxw": 980,
+    "maxh": 260
+   }
+  },
+  {
+   "src": "nt",
+   "a": 28.0,
+   "b": 33.8,
+   "speed": 1.6,
+   "caption": "Her faith was renewed.\nGod was in control."
+  },
+  {
+   "src": "nt",
+   "at": 33.5,
+   "freeze": 2.8,
+   "caption": "All because people cared\nand were intentional."
+  }
+ ]
+}

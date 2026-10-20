@@ -60,12 +60,12 @@ def background(sw, path):
     bg.save(path)
 
 
-def callout_png(src, at, box, cy, path, tmp):
+def callout_png(src, at, box, cy, path, tmp, maxw=660, maxh=210):
     """Zoomed 'pop-out' card of a small part of the screen (e.g. counters), taken from a still frame."""
     fr = os.path.join(tmp, f"co_{at}.png")
     run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(at), "-i", src, "-frames:v", "1", fr])
     crop = Image.open(fr).convert("RGB").crop(tuple(box))
-    sc = min(660 / crop.width, 210 / crop.height)
+    sc = min(maxw / crop.width, maxh / crop.height)
     crop = crop.resize((round(crop.width * sc), round(crop.height * sc)), Image.LANCZOS)
     pad = 34; cw, ch = crop.width + 2 * pad, crop.height + 2 * pad
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -140,7 +140,7 @@ def main():
         d_seg = dur_of(p)
         if "callout" in s:
             c = s["callout"]; cp = os.path.join(tmp, f"co{i}.png")
-            callout_png(src, c["at"], c["box"], c.get("y", SCREEN_TOP + 640), cp, tmp)
+            callout_png(src, c["at"], c["box"], c.get("y", SCREEN_TOP + 640), cp, tmp, c.get("maxw", 660), c.get("maxh", 210))
             callouts.append([t, t + d_seg, cp])
         t += d_seg; parts.append(p)
     total = t
