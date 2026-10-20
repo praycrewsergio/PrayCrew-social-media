@@ -1,0 +1,112 @@
+{
+ "lang": "es",
+ "label": "MÉTRICAS PERSONALES",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "m",
+   "at": 7.7,
+   "freeze": 2.0,
+   "caption": "¿Cómo va tu vida\nde oración?"
+  },
+  {
+   "src": "m",
+   "a": 3.4,
+   "b": 4.6,
+   "caption": "Abre Métricas desde el menú"
+  },
+  {
+   "src": "m",
+   "a": 4.6,
+   "b": 7.7,
+   "speed": 4
+  },
+  {
+   "src": "m",
+   "a": 7.7,
+   "b": 9.9,
+   "speed": 1.2,
+   "caption": "Oraciones creadas,\ncompartidas y contestadas"
+  },
+  {
+   "src": "m",
+   "a": 9.9,
+   "b": 12.1,
+   "caption": "Tu porcentaje de\noraciones contestadas"
+  },
+  {
+   "src": "m",
+   "a": 12.1,
+   "b": 14.3,
+   "caption": "Tu hábito diario de oración"
+  },
+  {
+   "src": "m",
+   "a": 14.3,
+   "b": 17.6,
+   "speed": 1.5,
+   "caption": "Por qué oras más"
+  },
+  {
+   "src": "m",
+   "a": 17.6,
+   "b": 19.8,
+   "caption": "Mira cuántas veces\noraron por ti",
+   "callout": {
+    "at": 17.6,
+    "box": [
+     90,
+     1170,
+     1080,
+     1515
+    ],
+    "maxw": 940,
+    "maxh": 300
+   }
+  },
+  {
+   "src": "m",
+   "a": 19.8,
+   "b": 26.4,
+   "speed": 3,
+   "caption": "Cambia a Compartido conmigo"
+  },
+  {
+   "src": "m",
+   "a": 26.4,
+   "b": 28.6,
+   "caption": "Oraciones que\ncompartieron contigo"
+  },
+  {
+   "src": "m",
+   "a": 28.6,
+   "b": 35.2,
+   "speed": 2.5
+  },
+  {
+   "src": "m",
+   "a": 35.2,
+   "b": 38.5,
+   "caption": "Y cuántas veces\noraste por otros",
+   "callout": {
+    "at": 36.3,
+    "box": [
+     90,
+     1065,
+     1080,
+     1455
+    ],
+    "maxw": 940,
+    "maxh": 300
+   }
+  },
+  {
+   "src": "m",
+   "a": 38.5,
+   "b": 41.8,
+   "speed": 2,
+   "caption": "Anímate.\nSigue orando.",
+   "hold": 1.6
+  }
+ ]
+}

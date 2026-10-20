@@ -1,0 +1,112 @@
+{
+ "lang": "en",
+ "label": "PERSONAL METRICS",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "m",
+   "at": 8.8,
+   "freeze": 2.0,
+   "caption": "How's your prayer life?"
+  },
+  {
+   "src": "m",
+   "a": 3.4,
+   "b": 4.6,
+   "caption": "Open Metrics from the menu"
+  },
+  {
+   "src": "m",
+   "a": 4.6,
+   "b": 8.8,
+   "speed": 4
+  },
+  {
+   "src": "m",
+   "a": 8.8,
+   "b": 11.0,
+   "speed": 1.2,
+   "caption": "Prayers you created,\nshared and saw answered"
+  },
+  {
+   "src": "m",
+   "a": 11.0,
+   "b": 13.2,
+   "caption": "Your answered prayer rate"
+  },
+  {
+   "src": "m",
+   "a": 13.2,
+   "b": 15.4,
+   "caption": "Your daily prayer habit"
+  },
+  {
+   "src": "m",
+   "a": 15.4,
+   "b": 17.6,
+   "speed": 1.5,
+   "caption": "What you pray about most"
+  },
+  {
+   "src": "m",
+   "a": 17.6,
+   "b": 20.9,
+   "caption": "See how many times\nothers prayed for you",
+   "callout": {
+    "at": 18.7,
+    "box": [
+     90,
+     1215,
+     1080,
+     1605
+    ],
+    "maxw": 940,
+    "maxh": 300
+   }
+  },
+  {
+   "src": "m",
+   "a": 20.9,
+   "b": 26.4,
+   "speed": 3,
+   "caption": "Switch to Shared with me"
+  },
+  {
+   "src": "m",
+   "a": 26.4,
+   "b": 28.6,
+   "caption": "Prayers people\nshared with you"
+  },
+  {
+   "src": "m",
+   "a": 28.6,
+   "b": 35.2,
+   "speed": 2.5
+  },
+  {
+   "src": "m",
+   "a": 35.2,
+   "b": 38.5,
+   "caption": "And how many times\nyou prayed for others",
+   "callout": {
+    "at": 37.4,
+    "box": [
+     90,
+     1245,
+     1080,
+     1590
+    ],
+    "maxw": 940,
+    "maxh": 300
+   }
+  },
+  {
+   "src": "m",
+   "a": 38.5,
+   "b": 41.8,
+   "speed": 2,
+   "caption": "Be encouraged.\nKeep praying.",
+   "hold": 1.6
+  }
+ ]
+}
