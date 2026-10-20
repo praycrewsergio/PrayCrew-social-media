@@ -1,13 +1,89 @@
-{"lang": "en", "label": "FOLLOW-UP", "crop_top": 150,
+{
+ "lang": "en",
+ "label": "FOLLOW-UP",
+ "crop_top": 150,
  "segments": [
-  {"src": "fu", "at": 2.3, "freeze": 1.9, "caption": "No more\n“I'll pray for you.”"},
-  {"src": "fu", "a": 2.3, "b": 4.0, "caption": "Open a request in your crew"},
-  {"src": "fu", "a": 4.0, "b": 6.2, "speed": 3},
-  {"src": "fu", "a": 6.2, "b": 12.0, "speed": 1.2, "caption": "Tap the hands. They'll know you prayed.", "callout": {"at": 14.0, "box": [780, 700, 955, 790]}},
-  {"src": "fu", "a": 12.0, "b": 38.6, "speed": 5, "caption": "Type a prayer or a follow-up"},
-  {"src": "fu", "a": 40.6, "b": 58.6, "speed": 1.8, "caption": "Send a voice note"},
-  {"src": "fu", "a": 60.6, "b": 74.5, "speed": 1.6, "caption": "Send a selfie or a picture"},
-  {"src": "fu", "a": 74.5, "b": 91.0, "speed": 1.6, "caption": "Or record a video"},
-  {"src": "fu", "a": 91.0, "b": 103.5, "speed": 4, "caption": "No prayer gets forgotten."},
-  {"src": "fu", "a": 103.5, "b": 106.8, "caption": "Show them how much you care.", "hold": 1.8}
- ]}
+  {
+   "src": "fu",
+   "at": 2.3,
+   "freeze": 2.3,
+   "caption": "No more “I'll pray for you”\nwith no follow-up."
+  },
+  {
+   "src": "fu",
+   "at": 2.3,
+   "freeze": 1.3,
+   "caption": "Be intentional."
+  },
+  {
+   "src": "fu",
+   "a": 2.3,
+   "b": 4.0,
+   "caption": "Open a request in your crew"
+  },
+  {
+   "src": "fu",
+   "a": 4.0,
+   "b": 6.2,
+   "speed": 3
+  },
+  {
+   "src": "fu",
+   "a": 6.2,
+   "b": 12.0,
+   "speed": 1.2,
+   "caption": "Tap the hands. They'll know you prayed.",
+   "callout": {
+    "at": 14.0,
+    "box": [
+     780,
+     700,
+     955,
+     790
+    ]
+   }
+  },
+  {
+   "src": "fu",
+   "a": 12.0,
+   "b": 38.6,
+   "speed": 5,
+   "caption": "Type a prayer or a follow-up"
+  },
+  {
+   "src": "fu",
+   "a": 40.6,
+   "b": 58.6,
+   "speed": 1.8,
+   "caption": "Send a voice note"
+  },
+  {
+   "src": "fu",
+   "a": 60.6,
+   "b": 74.5,
+   "speed": 1.6,
+   "caption": "Send a selfie or a picture"
+  },
+  {
+   "src": "fu",
+   "a": 74.5,
+   "b": 91.0,
+   "speed": 1.6,
+   "caption": "Or record a video"
+  },
+  {
+   "src": "fu",
+   "a": 91.0,
+   "b": 103.5,
+   "speed": 4,
+   "caption": "No prayer gets forgotten."
+  },
+  {
+   "src": "fu",
+   "a": 103.5,
+   "b": 106.8,
+   "caption": "Show them how much you care.",
+   "hold": 1.8
+  }
+ ]
+}
