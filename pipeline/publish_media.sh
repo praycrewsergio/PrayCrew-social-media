@@ -10,7 +10,8 @@ TODAY=$(TZ=America/Chicago date +%F)
 WORK=$(mktemp -d)
 git -C "$REPO" worktree add --detach "$WORK" >/dev/null 2>&1
 cd "$WORK"
-git checkout -q --orphan media-tmp
+BR="media-tmp-$$"
+git checkout -q --orphan "$BR"
 git rm -rq --cached . >/dev/null 2>&1 || true
 find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 mkdir -p videos
@@ -31,5 +32,6 @@ echo "Upcoming videos for Metricool (auto-published by the daily verse task)." >
 git add videos
 git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -qm "Upcoming verse videos ($n files)"
 git push -q -f origin HEAD:media
-cd "$REPO"; git worktree remove --force "$WORK"
-echo "published $n videos to media branch"
+git rev-parse HEAD > /tmp/media_sha
+cd "$REPO"; git worktree remove --force "$WORK"; git branch -D "$BR" >/dev/null 2>&1 || true
+echo "published $n videos to media branch at $(cat /tmp/media_sha)"

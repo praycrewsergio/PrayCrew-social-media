@@ -16,13 +16,14 @@ Sundays: weekly recap carousel at 18:00 (Instagram EN+ES, LinkedIn document, Tik
    Collect the uncovered dates (usually just today+7).
 3. For each uncovered date: `day = (D - 2026-10-20).days + 1`
    - FIRST write `copy/D.json` following `COPY_GUIDE.md` (read the verse from `batch.day_info(day)`), including key_en/key_es.
-   - `python3 posts_from_copy.py D > /tmp/posts_D.jsonl` (fails if an excerpt isn't word-for-word — fix the copy).
+   - `python3 posts_from_copy.py D > /dev/null` to validate the copy (fails if an excerpt isn't word-for-word — fix it).
    - `python3 batch.py DAY DAY` → `../videos/D_en.mp4`, `../videos/D_es.mp4` in that weekday's style with music
      (prints the 1080x1920 check; fails if key_en/key_es is not an exact phrase of the verse).
    - If D is a Sunday, also check for the 18:00 recap posts (EN instagram, linkedin, tiktok; ES instagram). If missing:
-     `python3 recap.py D` then `python3 recap.py D --posts > /tmp/recap_D.jsonl`.
-4. `bash publish_media.sh` (force-pushes upcoming videos to the `media` branch). Confirm
-   `curl -sI https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/media/videos/D_en.mp4` → 200.
+     `python3 recap.py D`.
+4. `bash publish_media.sh` (force-pushes upcoming videos to the `media` branch and writes the commit SHA to /tmp/media_sha).
+   THEN generate the payloads (they embed SHA-pinned media URLs): `python3 posts_from_copy.py D > /tmp/posts_D.jsonl`
+   and on Sundays `python3 recap.py D --posts > /tmp/recap_D.jsonl`. Confirm one media URL from the file returns 200 with curl.
 5. For each line in each posts/recap file, call `createScheduledPost(blogId, date, info)`, only for posts still missing.
 6. Commit `copy/*.json` to `main` and push.
 7. Re-check with `getScheduledPosts`; report any day/network still missing.

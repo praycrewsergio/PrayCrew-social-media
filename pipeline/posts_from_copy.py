@@ -11,7 +11,9 @@ import json, os, re, sys, datetime
 import batch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RAW = "https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/media/videos/"
+# Media URLs are pinned to the media-branch commit written by publish_media.sh (branch URLs can lag minutes).
+MEDIA_SHA = os.environ.get("MEDIA_SHA") or (open("/tmp/media_sha").read().strip() if os.path.exists("/tmp/media_sha") else "media")
+RAW = f"https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/{MEDIA_SHA}/videos/"
 EN, ES = "5449351", "5454893"
 POST_TIME = "10:00:00"
 FIRST_COMMENT = {"en": "Drop your prayer request below 🙏 Our PrayCrew community will pray with you.",

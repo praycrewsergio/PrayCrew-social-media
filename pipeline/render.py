@@ -141,9 +141,15 @@ def header_layer(lang, y_logo=150, caption=True):
     return soft_shadow(layer, 5, 0.5)
 
 
+def quoted(text):
+    """Wrap in curly quotes; inner quotes become single; trailing , ; : becomes …"""
+    t = re.sub(r"“([^”]*)”", r"‘\1’", text.strip())
+    return "“" + re.sub(r"[,;:]$", "…", t) + "”"
+
+
 def style_cinematic(text, ref, lang, key):
     static = gradient(0.25, 0.8); static.alpha_composite(header_layer(lang))
-    f, lines, lh = fit(("“" + text + "”").split(), "serif.woff", 80, 46, 900, 980, 1.28)
+    f, lines, lh = fit(quoted(text).split(), "serif.woff", 80, 46, 900, 980, 1.28)
     y0 = 1000 - len(lines) * lh / 2
     layers, units = [], []
     for n, ln in enumerate(lines):

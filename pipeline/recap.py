@@ -17,7 +17,9 @@ from posts_from_copy import nested
 
 W, H = 1080, 1350
 OUT = os.path.join(HERE, "..", "videos", "recap")
-RAW = "https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/media/videos/recap/"
+# Media URLs are pinned to the media-branch commit written by publish_media.sh (branch URLs can lag minutes).
+MEDIA_SHA = os.environ.get("MEDIA_SHA") or (open("/tmp/media_sha").read().strip() if os.path.exists("/tmp/media_sha") else "media")
+RAW = f"https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/{MEDIA_SHA}/videos/recap/"
 EN, ES = "5449351", "5454893"
 DAYS = {"en": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
         "es": ["LUNES", "MARTES", "MIÉRCOLES", "JUEVES", "VIERNES", "SÁBADO", "DOMINGO"]}
