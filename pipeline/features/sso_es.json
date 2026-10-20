@@ -1,0 +1,9 @@
+{"lang": "es", "label": "INICIO DE SESIÓN ÚNICO", "crop_top": 150,
+ "segments": [
+  {"src": "apple", "at": 3.4, "freeze": 1.6, "caption": "¿Otra contraseña?\nAquí no."},
+  {"src": "apple", "a": 3.4, "b": 5.7, "caption": "Toca Apple o Gmail"},
+  {"src": "apple", "a": 5.7, "b": 7.3, "caption": "Confirma con Face ID"},
+  {"src": "apple", "a": 7.3, "b": 9.4, "speed": 1.5},
+  {"src": "gmail", "a": 5.5, "b": 9.0, "speed": 2, "caption": "Listo. Empieza a orar."},
+  {"src": "gmail", "a": 9.0, "b": 11.0, "hold": 1.5}
+ ]}

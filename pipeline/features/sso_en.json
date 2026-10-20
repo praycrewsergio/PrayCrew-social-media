@@ -1,0 +1,10 @@
+{"lang": "en", "label": "SINGLE SIGN-ON", "crop_top": 150,
+ "segments": [
+  {"src": "apple", "at": 3.2, "freeze": 1.6, "caption": "One more password?\nNot here."},
+  {"src": "apple", "a": 3.2, "b": 5.6, "caption": "Tap Apple or Gmail"},
+  {"src": "apple", "a": 5.6, "b": 8.0, "caption": "Confirm with Face ID"},
+  {"src": "apple", "a": 8.0, "b": 12.2, "speed": 2.5},
+  {"src": "apple", "a": 12.2, "b": 13.2},
+  {"src": "apple", "a": 13.2, "b": 15.8, "speed": 2, "caption": "You're in. Start praying."},
+  {"src": "apple", "a": 15.8, "b": 17.4, "hold": 1.5}
+ ]}
