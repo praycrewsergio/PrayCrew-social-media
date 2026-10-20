@@ -1,0 +1,13 @@
+{"lang": "es", "label": "SEGUIMIENTO", "crop_top": 150,
+ "segments": [
+  {"src": "fu", "at": 2.3, "freeze": 1.9, "caption": "Ya no más\n“oraré por ti”."},
+  {"src": "fu", "a": 2.3, "b": 4.0, "caption": "Abre una petición en tu grupo"},
+  {"src": "fu", "a": 4.0, "b": 8.2, "speed": 4},
+  {"src": "fu", "a": 8.2, "b": 12.0, "caption": "Toca las manos. Sabrá que oraste.", "callout": {"at": 16.0, "box": [780, 700, 955, 790]}},
+  {"src": "fu", "a": 12.0, "b": 28.5, "speed": 4, "caption": "Escribe una oración o dale seguimiento"},
+  {"src": "fu", "a": 30.5, "b": 45.0, "speed": 1.6, "caption": "Envía una nota de voz"},
+  {"src": "fu", "a": 48.5, "b": 58.5, "speed": 1.4, "caption": "Envía una selfie o una foto"},
+  {"src": "fu", "a": 58.5, "b": 73.0, "speed": 1.5, "caption": "O graba un video"},
+  {"src": "fu", "a": 73.0, "b": 80.3, "speed": 3, "caption": "Ninguna oración se olvida."},
+  {"src": "fu", "a": 80.3, "b": 82.8, "caption": "Muéstrales cuánto te importan.", "hold": 1.8}
+ ]}
