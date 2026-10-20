@@ -19,6 +19,14 @@ for f in "$SRC"/*.mp4; do
   b=$(basename "$f"); d=${b%%_*}
   if [[ "$d" > "$TODAY" || "$d" == "$TODAY" ]]; then cp "$f" videos/; n=$((n+1)); fi
 done
+if [ -d "$SRC/recap" ]; then
+  mkdir -p videos/recap
+  for dir in "$SRC"/recap/*_en "$SRC"/recap/*_es; do
+    [ -d "$dir" ] || continue
+    b=$(basename "$dir"); d=${b%%_*}
+    if [[ "$d" > "$TODAY" || "$d" == "$TODAY" ]]; then cp -r "$dir" videos/recap/; n=$((n+1)); fi
+  done
+fi
 echo "Upcoming videos for Metricool (auto-published by the daily verse task)." > videos/README.md
 git add videos
 git -c user.name="Claude" -c user.email="noreply@anthropic.com" commit -qm "Upcoming verse videos ($n files)"

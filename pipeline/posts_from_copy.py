@@ -14,6 +14,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = "https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/media/videos/"
 EN, ES = "5449351", "5454893"
 POST_TIME = "10:00:00"
+FIRST_COMMENT = {"en": "Drop your prayer request below 🙏 Our PrayCrew community will pray with you.",
+                 "es": "Deja tu petición de oración aquí abajo 🙏 Nuestra comunidad de PrayCrew orará contigo."}
+FIRST_COMMENT_NETS = {"instagram", "linkedin", "youtube"}
 
 
 def nested(t):
@@ -35,7 +38,8 @@ def payloads(date_str):
     d = datetime.datetime.fromisoformat(when).replace(tzinfo=ZoneInfo("America/Chicago")).isoformat()
 
     def base(lang, net, text):
-        return {"autoPublish": True, "draft": False, "descendants": [], "firstCommentText": "", "hasNotReadNotes": False,
+        return {"autoPublish": True, "draft": False, "descendants": [],
+                "firstCommentText": FIRST_COMMENT[lang] if net in FIRST_COMMENT_NETS else "", "hasNotReadNotes": False,
                 "media": [f"{RAW}{date_str}_{lang}.mp4"], "mediaAltText": [], "providers": [{"network": net}],
                 "publicationDate": {"dateTime": when, "timezone": "America/Chicago"}, "shortener": False,
                 "smartLinkData": {"ids": []}, "text": text}

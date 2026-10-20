@@ -28,6 +28,7 @@ Write one `copy/YYYY-MM-DD.json` per day; `posts_from_copy.py` turns it into the
 | li_open | LinkedIn first line | A leadership/workday observation (≤ 12 words). |
 | li_quote | LinkedIn | [excerpt, "Psalm 9:9 (BSB)"]. |
 | li_body | LinkedIn | 2–3 sentences connecting the verse to leading a church, ministry, team or business. Mention prayer/care for people. |
+| key_en / key_es | video | 3–7 words copied EXACTLY from that day's verse (BSB / RVR1909) — the heart of the verse. Shown huge on key-phrase days and highlighted in yellow on word-highlight days. Required. |
 | optional ig_cta_en, x_cta_en, ig_cta_es, x_cta_es | | Override the default comment prompt when the question already contains one (e.g. "Tag them below…"). |
 
 Spanish copy is written natively (not a word-for-word translation), using "tú".
@@ -48,6 +49,16 @@ Spanish copy is written natively (not a word-for-word translation), using "tú".
  "hook_es": "Nunca has sido olvidado. 🙏",
  "reflect_es": "Conocer el nombre de Dios es conocer Su carácter: Él nunca ha desamparado a los que le buscan.",
  "q_es": "¿Cómo te ha mostrado Dios Su fidelidad este año?",
- "x_es": ["por cuanto tú, oh Jehová, no desamparaste a los que te buscaron.", "Salmo 9:10"]
+ "x_es": ["por cuanto tú, oh Jehová, no desamparaste a los que te buscaron.", "Salmo 9:10"],
+ "key_en": "have not forsaken those who seek You",
+ "key_es": "no desamparaste a los que te buscaron"
 }
 ```
+
+## Automatic extras (no copy needed)
+- First comment on Instagram, LinkedIn and YouTube: "Drop your prayer request below 🙏 …" / "Deja tu petición de oración aquí abajo 🙏 …".
+- Every video has an original calm music bed (assets/music, rotates daily). Instagram's music library is not available
+  for these accounts (needs Instagram Business linked to a Facebook Page), so the music is built into the video.
+- Video style rotates by weekday: Mon Cinematic, Tue Word highlight, Wed Frosted glass, Thu Key phrase,
+  Fri Paper card, Sat Cinematic, Sun Frosted glass.
+- Sundays also get the weekly recap carousel at 18:00 (`recap.py`), captions are automatic.
