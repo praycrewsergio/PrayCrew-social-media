@@ -1,0 +1,97 @@
+{
+ "lang": "es",
+ "label": "MENSAJES SIN LEER",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "u",
+   "at": 6.6,
+   "freeze": 2.0,
+   "caption": "No te pierdas\nla conversación."
+  },
+  {
+   "src": "u",
+   "a": 6.6,
+   "b": 7.35,
+   "speed": 0.33,
+   "caption": "Los círculos rojos muestran\nlo que no has leído",
+   "callout": {
+    "at": 7.0,
+    "box": [
+     280,
+     975,
+     960,
+     1150
+    ],
+    "maxw": 860,
+    "maxh": 220
+   }
+  },
+  {
+   "src": "u",
+   "a": 7.35,
+   "b": 13.4,
+   "speed": 4
+  },
+  {
+   "src": "u",
+   "a": 13.4,
+   "b": 15.2,
+   "speed": 0.6,
+   "caption": "Ve qué petición tiene\nmensajes nuevos",
+   "callout": {
+    "at": 14.0,
+    "box": [
+     140,
+     1600,
+     950,
+     1680
+    ],
+    "maxw": 900,
+    "maxh": 140
+   }
+  },
+  {
+   "src": "u",
+   "a": 15.2,
+   "b": 21.5,
+   "speed": 5
+  },
+  {
+   "src": "u",
+   "a": 21.5,
+   "b": 24.0,
+   "caption": "Ponte al día con\ncada comentario"
+  },
+  {
+   "src": "u",
+   "a": 24.0,
+   "b": 30.5,
+   "speed": 5
+  },
+  {
+   "src": "u",
+   "a": 30.5,
+   "b": 32.4,
+   "caption": "Estás al día.",
+   "hold": 1.2,
+   "callout": {
+    "at": 31.5,
+    "box": [
+     140,
+     1600,
+     950,
+     1680
+    ],
+    "maxw": 900,
+    "maxh": 140
+   }
+  },
+  {
+   "src": "u",
+   "at": 33.0,
+   "freeze": 2.4,
+   "caption": "Sé parte de la conversación."
+  }
+ ]
+}
