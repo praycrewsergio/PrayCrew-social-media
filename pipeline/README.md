@@ -1,24 +1,26 @@
-# PrayCrew daily verse pipeline
+# PrayCrew daily verse — runbook
 
-Renders the daily "Verse of the Day" / "Versículo del día" videos and the Metricool post payloads.
+Goal: every day has a "Verse of the Day" post at 10:00 America/Chicago on all 7 accounts:
+- PrayCrew English (Metricool blogId 5449351): Instagram Reel, X, TikTok, YouTube Short, LinkedIn — one post each
+- PrayCrew Espanol (blogId 5454893): Instagram Reel, X — one post each
 
-- Day 1 = 2026-10-20 = verse #1 in `verses.json` (117 passages, BSB English / RVR1909 Spanish; cycles after 117).
-- One nature loop per day from `loops/` (loops 07, 22, 29, 30, 34, 35, 36 are excluded: man-made, cars, people).
-- Output: `../videos/YYYY-MM-DD_en.mp4` and `_es.mp4`, always 1080x1920, then the QR card and the "Available on" card.
-- Videos are served to Metricool from
-  `https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/main/videos/<file>`.
+Day 1 = 2026-10-20 = verse #1 of `verses.json` (117 passages, cycles). One loop video per day from `loops/` (all 43).
+Videos: 1080x1920, verse types in on the loop, then QR card, then "Available on" card.
 
-## Weekly run
+## Daily run (keep the next 7 days covered)
+1. Setup: `pip install --break-system-packages pillow` if missing; `ffmpeg` must exist.
+2. For each date D from today through today+7 (America/Chicago):
+   call Metricool `getScheduledPosts` for both brands for D. A day is covered when there are
+   10:00 posts for EN instagram, twitter, tiktok, youtube, linkedin and ES instagram, twitter.
+   Collect the uncovered dates (usually just today+7).
+3. For each uncovered date: `day = (D - 2026-10-20).days + 1`
+   - `python3 batch.py DAY DAY` → `../videos/D_en.mp4`, `../videos/D_es.mp4` (prints 1080x1920 check).
+   - Write `copy/D.json` following `COPY_GUIDE.md` (read the verse from `batch.day_info(day)`).
+   - `python3 posts_from_copy.py D > /tmp/posts_D.jsonl` (fails if an excerpt isn't word-for-word — fix the copy).
+4. `bash publish_media.sh` (force-pushes upcoming videos to the `media` branch). Confirm
+   `curl -sI https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/media/videos/D_en.mp4` → 200.
+5. For each line in each posts file, call `createScheduledPost(blogId, date, info)`, only for networks still missing that day.
+6. Commit `copy/*.json` to `main` and push.
+7. Re-check with `getScheduledPosts`; report any day/network still missing.
 
-Requirements: `ffmpeg`, Python 3 with Pillow (`pip install --break-system-packages pillow`).
-
-1. `day = (date - 2026-10-20).days + 1` for the first day to schedule.
-2. `python3 batch.py FIRST_DAY LAST_DAY` (about 1–2 min per video).
-3. Commit and push `videos/` to `main`.
-4. `python3 posts.py FIRST_DAY LAST_DAY` prints one JSON line per post: `blogId`, `date`, `info`.
-   Call Metricool `createScheduledPost(blogId, date, info)` for every line (4 posts per day):
-   - PrayCrew Espanol (5454893): Instagram Reel; X
-   - PrayCrew English (5449351): Instagram Reel + LinkedIn + TikTok + YouTube Short; X
-5. Before scheduling, call `getScheduledPosts` for the range and skip any day that already has posts.
-
-Posting time: 10:00 America/Chicago (Metricool's best hour for both brands).
+Never edit or delete posts the user created themselves (posts not at 10:00 or not made by this pipeline).
