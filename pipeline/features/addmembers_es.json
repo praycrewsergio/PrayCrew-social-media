@@ -1,0 +1,10 @@
+{"lang": "es", "label": "AGREGAR MIEMBROS", "crop_top": 150,
+ "segments": [
+  {"src": "create", "at": 50.2, "freeze": 1.8, "caption": "Suma guerreros de oración\na tu grupo."},
+  {"src": "create", "a": 50.2, "b": 51.6, "caption": "Abre el código QR de tu grupo"},
+  {"src": "create", "a": 51.6, "b": 53.6, "speed": 2.5},
+  {"src": "create", "a": 53.6, "b": 58.5, "speed": 1.3, "caption": "Muéstralo o copia el enlace", "hold": 0.4},
+  {"src": "join", "a": 5.0, "b": 9.2, "caption": "Lo escanean y piden unirse", "hold": 0.6},
+  {"src": "approve", "a": 7.0, "b": 10.2, "caption": "Apruébalos con un toque"},
+  {"src": "approve", "a": 12.8, "b": 14.0, "caption": "Bienvenido al grupo,\nguerrero de oración.", "hold": 1.8}
+ ]}

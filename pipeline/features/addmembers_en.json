@@ -1,0 +1,11 @@
+{"lang": "en", "label": "ADD MEMBERS", "crop_top": 150,
+ "segments": [
+  {"src": "create", "at": 58.6, "freeze": 1.8, "caption": "Add prayer warriors\nto your crew."},
+  {"src": "create", "a": 58.6, "b": 61.0, "caption": "Open your crew's QR code"},
+  {"src": "create", "a": 61.0, "b": 63.5, "speed": 2.5},
+  {"src": "create", "a": 63.5, "b": 69.5, "speed": 1.6, "caption": "Show it or copy the link", "hold": 0.4},
+  {"src": "join", "a": 9.6, "b": 15.0, "caption": "They scan it and ask to join", "hold": 0.6},
+  {"src": "approve", "a": 18.0, "b": 25.5, "speed": 1.5, "caption": "Approve with one tap"},
+  {"src": "approve", "a": 25.5, "b": 27.5},
+  {"src": "approve", "a": 31.5, "b": 36.7, "speed": 1.5, "caption": "Welcome to the crew,\nprayer warrior.", "hold": 1.8}
+ ]}
