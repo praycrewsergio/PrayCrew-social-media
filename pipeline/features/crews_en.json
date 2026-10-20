@@ -1,0 +1,86 @@
+{
+ "lang": "en",
+ "label": "CREWS",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "create",
+   "at": 6.2,
+   "freeze": 1.8,
+   "caption": "Start a prayer crew\nin under a minute."
+  },
+  {
+   "src": "create",
+   "a": 6.2,
+   "b": 8.0,
+   "caption": "Tap New Crew"
+  },
+  {
+   "src": "create",
+   "a": 8.0,
+   "b": 26.5,
+   "speed": 5,
+   "caption": "Give it a name"
+  },
+  {
+   "src": "create",
+   "a": 34.0,
+   "b": 41.5,
+   "speed": 1.8,
+   "caption": "Choose how requests are shared"
+  },
+  {
+   "src": "create",
+   "a": 41.5,
+   "b": 46.5,
+   "speed": 2.5
+  },
+  {
+   "src": "create",
+   "a": 56.0,
+   "b": 61.0,
+   "speed": 1.6,
+   "caption": "Share your crew's QR code"
+  },
+  {
+   "src": "create",
+   "a": 61.0,
+   "b": 63.5,
+   "speed": 2.5
+  },
+  {
+   "src": "create",
+   "a": 63.5,
+   "b": 69.5,
+   "speed": 1.6,
+   "hold": 0.4
+  },
+  {
+   "src": "join",
+   "a": 9.6,
+   "b": 15.0,
+   "caption": "Members scan it and ask to join",
+   "hold": 0.6
+  },
+  {
+   "src": "approve",
+   "a": 18.0,
+   "b": 25.5,
+   "speed": 1.5,
+   "caption": "Approve them with one tap"
+  },
+  {
+   "src": "approve",
+   "a": 25.5,
+   "b": 27.5
+  },
+  {
+   "src": "approve",
+   "a": 31.5,
+   "b": 36.7,
+   "speed": 1.5,
+   "caption": "Now you pray together.",
+   "hold": 1.8
+  }
+ ]
+}
