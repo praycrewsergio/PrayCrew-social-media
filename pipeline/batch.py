@@ -5,8 +5,8 @@ import json, os, subprocess, sys, datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "videos")
 START = datetime.date(2026, 10, 20)
-EXCLUDED_LOOPS = {7, 22, 29, 30, 34, 35, 36}   # ruins, cars, CGI planet, cars, buildings, person, town lights
-LOOPS = [n for n in range(1, 39) if n not in EXCLUDED_LOOPS]
+EXCLUDED_LOOPS = set()   # use every loop (approved by Sergio)
+LOOPS = [n for n in range(1, 44) if n not in EXCLUDED_LOOPS]
 
 verses = json.load(open(os.path.join(HERE, "verses.json")))
 
