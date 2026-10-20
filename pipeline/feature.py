@@ -103,17 +103,14 @@ def caption_png(label, text, path):
     im.save(path)
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("spec"); ap.add_argument("out")
-    ap.add_argument("--src", action="append", default=[], help="NAME=path to a screen recording")
-    ap.add_argument("--music", type=int, default=2)
-    a = ap.parse_args()
-    spec = json.load(open(a.spec))
-    srcs = dict(s.split("=", 1) for s in a.src)
-    lang, crop_top = spec["lang"], spec.get("crop_top", 150)
-    tmp = tempfile.mkdtemp()
-
+def render_chapter(ch, label, srcs, tmp, idx):
+    """One chapter = one screen layout: "phone" (portrait recording) or "wide" (browser / desktop recording)."""
+    global SCREEN_H, SCREEN_TOP, RADIUS
+    wide = ch.get("screen") == "wide"
+    SCREEN_H, SCREEN_TOP, RADIUS = 1440, 400, 58
+    crop_top = ch.get("crop_top", 0 if wide else 150)
+    spec = {"label": label, "segments": ch["segments"]}
+    tmp = os.path.join(tmp, f"ch{idx}"); os.makedirs(tmp, exist_ok=True)
     # 1. phone track: trim / speed / freeze every segment, then concatenate
     sw = None; parts = []; caps = []; callouts = []; t = 0.0
     for i, s in enumerate(spec["segments"]):
@@ -122,8 +119,18 @@ def main():
             w0, h0 = (int(v) for v in subprocess.run(
                 ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", src],
                 capture_output=True, text=True, check=True).stdout.strip().split(",")[:2])
-            sw = round(w0 * SCREEN_H / (h0 - crop_top) / 2) * 2
-        vf = f"crop=iw:ih-{crop_top}:0:{crop_top},scale={sw}:{SCREEN_H},setsar=1"
+            if "crop" in ch:
+                cx, cy, w0, h0 = ch["crop"]; h0 += crop_top
+            if wide:
+                sw = 1000; SCREEN_H = round(sw * (h0 - crop_top) / w0 / 2) * 2
+                SCREEN_TOP = max(430, (H - SCREEN_H) // 2 + 120); RADIUS = 22
+            else:
+                sw = round(w0 * SCREEN_H / (h0 - crop_top) / 2) * 2
+        if "crop" in ch:
+            cx, cy, cw, chh = ch["crop"]
+            vf = f"crop={cw}:{chh}:{cx}:{cy},scale={sw}:{SCREEN_H},setsar=1"
+        else:
+            vf = f"crop=iw:ih-{crop_top}:0:{crop_top},scale={sw}:{SCREEN_H},setsar=1"
         p = os.path.join(tmp, f"p{i:02d}.mp4")
         if "freeze" in s:
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(s["at"]), "-i", src, "-frames:v", "1", "-vf", vf,
@@ -180,11 +187,33 @@ def main():
     run(["ffmpeg", "-nostdin", "-v", "error", "-y", *inputs, "-filter_complex", fc, "-map", "[v]", "-t", f"{total:.3f}",
          "-r", "30", "-c:v", "libx264", "-crf", "18", seg])
 
+    return seg
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("spec"); ap.add_argument("out")
+    ap.add_argument("--src", action="append", default=[], help="NAME=path to a screen recording")
+    ap.add_argument("--music", type=int, default=2)
+    a = ap.parse_args()
+    spec = json.load(open(a.spec))
+    srcs = dict(s.split("=", 1) for s in a.src)
+    tmp = tempfile.mkdtemp()
+
+    chapters = spec.get("chapters") or [{"screen": "phone", "crop_top": spec.get("crop_top", 150), "segments": spec["segments"]}]
+    lang = spec["lang"]
+    segs = [render_chapter(ch, spec["label"], srcs, tmp, i) for i, ch in enumerate(chapters)]
+
     # 3. end card + music (same as the verse reels)
     joined = os.path.join(tmp, "joined.mp4")
-    run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", seg, "-i", A(f"endcard_{lang}.mp4"), "-filter_complex",
-         f"[0:v]setsar=1,fps=30[x];[1:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps=30[y];"
-         f"[x][y]concat=n=2:v=1[v]", "-map", "[v]", "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", joined])
+    ins = []; fcj = ""
+    for k, sp_ in enumerate(segs):
+        ins += ["-i", sp_]; fcj += f"[{k}:v]setsar=1,fps=30[x{k}];"
+    n = len(segs)
+    ins += ["-i", A(f"endcard_{lang}.mp4")]
+    fcj += f"[{n}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps=30[x{n}];"
+    fcj += "".join(f"[x{k}]" for k in range(n + 1)) + f"concat=n={n + 1}:v=1[v]"
+    run(["ffmpeg", "-nostdin", "-v", "error", "-y", *ins, "-filter_complex", fcj, "-map", "[v]", "-c:v", "libx264",
+         "-crf", "18", "-pix_fmt", "yuv420p", joined])
     dur = dur_of(joined)
     if a.music:
         run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", joined, "-stream_loop", "-1", "-i", A(f"music/track{a.music}.m4a"),

@@ -1,0 +1,146 @@
+{
+ "lang": "en",
+ "label": "BRANDED LANDING PAGE",
+ "chapters": [
+  {
+   "screen": "wide",
+   "crop_top": 0,
+   "segments": [
+    {
+     "src": "web",
+     "at": 3.2,
+     "freeze": 2.3,
+     "caption": "Collect prayer requests\nat scale."
+    },
+    {
+     "src": "web",
+     "a": 3.2,
+     "b": 7.3,
+     "speed": 1.2,
+     "caption": "No app download.\nNo account needed."
+    }
+   ],
+   "crop": [
+    380,
+    0,
+    1150,
+    980
+   ]
+  },
+  {
+   "screen": "phone",
+   "crop_top": 150,
+   "segments": [
+    {
+     "src": "app",
+     "a": 2.0,
+     "b": 12.5,
+     "speed": 4,
+     "caption": "Here's how to set it up"
+    },
+    {
+     "src": "app",
+     "at": 13.0,
+     "freeze": 2.2,
+     "caption": "Your prayer team joins the\ncrew as prayer warriors"
+    },
+    {
+     "src": "app",
+     "a": 13.0,
+     "b": 21.0,
+     "speed": 3,
+     "caption": "Open your crew's settings"
+    },
+    {
+     "src": "app",
+     "a": 21.0,
+     "b": 25.0,
+     "speed": 1.6,
+     "caption": "Tap Prayer request form",
+     "callout": {
+      "at": 22.0,
+      "box": [
+       40,
+       1320,
+       1130,
+       1470
+      ],
+      "maxw": 900,
+      "maxh": 160
+     }
+    },
+    {
+     "src": "app",
+     "a": 25.0,
+     "b": 33.0,
+     "speed": 1.6,
+     "caption": "Pick your brand colors"
+    },
+    {
+     "src": "app",
+     "a": 33.0,
+     "b": 36.5,
+     "caption": "Add a headline, message\nand Bible verse"
+    },
+    {
+     "src": "app",
+     "a": 36.5,
+     "b": 40.0,
+     "caption": "Preview what visitors see"
+    },
+    {
+     "src": "app",
+     "a": 40.0,
+     "b": 45.0,
+     "speed": 1.4,
+     "caption": "Share your public link"
+    },
+    {
+     "src": "app",
+     "a": 45.0,
+     "b": 50.0,
+     "speed": 1.4,
+     "caption": "Or embed it on your website",
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "screen": "wide",
+   "crop_top": 0,
+   "segments": [
+    {
+     "src": "web",
+     "a": 12.3,
+     "b": 21.7,
+     "speed": 1.5,
+     "caption": "Make it your own."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.6,
+     "caption": "They'll know every time\nyou pray for them."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.6,
+     "caption": "See what your community\nneeds prayer for."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.4,
+     "caption": "Follow up intentionally.\nServe them better."
+    }
+   ],
+   "crop": [
+    300,
+    0,
+    1250,
+    930
+   ]
+  }
+ ]
+}

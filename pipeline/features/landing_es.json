@@ -1,0 +1,150 @@
+{
+ "lang": "es",
+ "label": "PÁGINA CON TU MARCA",
+ "chapters": [
+  {
+   "screen": "wide",
+   "crop_top": 0,
+   "segments": [
+    {
+     "src": "web",
+     "at": 3.2,
+     "freeze": 2.3,
+     "caption": "Recibe peticiones de\noración a gran escala."
+    },
+    {
+     "src": "web",
+     "a": 3.2,
+     "b": 7.3,
+     "speed": 1.2,
+     "caption": "Sin descargar la app.\nSin crear una cuenta."
+    }
+   ],
+   "crop": [
+    380,
+    0,
+    1150,
+    980
+   ]
+  },
+  {
+   "screen": "phone",
+   "crop_top": 150,
+   "segments": [
+    {
+     "src": "app",
+     "a": 1.0,
+     "b": 8.8,
+     "speed": 3,
+     "caption": "Así se configura"
+    },
+    {
+     "src": "app",
+     "at": 9.2,
+     "freeze": 2.2,
+     "caption": "Tu equipo de oración se une\nal grupo como guerreros"
+    },
+    {
+     "src": "app",
+     "a": 9.2,
+     "b": 12.3,
+     "speed": 1.5,
+     "caption": "Abre la configuración del grupo"
+    },
+    {
+     "src": "app",
+     "at": 13.0,
+     "freeze": 1.8,
+     "caption": "Toca Formulario de peticiones",
+     "callout": {
+      "at": 13.0,
+      "box": [
+       40,
+       1855,
+       1130,
+       2005
+      ],
+      "maxw": 900,
+      "maxh": 160
+     }
+    },
+    {
+     "src": "app",
+     "a": 13.0,
+     "b": 14.5
+    },
+    {
+     "src": "app",
+     "a": 14.5,
+     "b": 17.0,
+     "caption": "Elige los colores de tu marca"
+    },
+    {
+     "src": "app",
+     "a": 17.0,
+     "b": 21.0,
+     "speed": 1.2,
+     "caption": "Agrega un título, mensaje\ny versículo"
+    },
+    {
+     "src": "app",
+     "a": 21.0,
+     "b": 23.5,
+     "caption": "Mira lo que verán tus visitantes"
+    },
+    {
+     "src": "app",
+     "a": 23.5,
+     "b": 28.0,
+     "speed": 1.4,
+     "caption": "Comparte tu enlace público"
+    },
+    {
+     "src": "app",
+     "a": 28.0,
+     "b": 33.5,
+     "speed": 1.4,
+     "caption": "O insértalo en tu sitio web",
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "screen": "wide",
+   "crop_top": 0,
+   "segments": [
+    {
+     "src": "web",
+     "a": 12.3,
+     "b": 21.7,
+     "speed": 1.5,
+     "caption": "Hazlo tuyo."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.6,
+     "caption": "Sabrán cada vez\nque oras por ellos."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.6,
+     "caption": "Conoce por qué necesita\noración tu comunidad."
+    },
+    {
+     "src": "web",
+     "at": 21.5,
+     "freeze": 2.4,
+     "caption": "Da seguimiento intencional.\nSírvelos mejor."
+    }
+   ],
+   "crop": [
+    300,
+    0,
+    1250,
+    930
+   ]
+  }
+ ]
+}
