@@ -1,0 +1,96 @@
+{
+ "lang": "es",
+ "label": "PETICIONES DE ORACIÓN",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "pr",
+   "at": 7.5,
+   "freeze": 1.9,
+   "caption": "¿Quién está orando por ti?\nAhora lo sabrás."
+  },
+  {
+   "src": "pr",
+   "a": 7.5,
+   "b": 9.0,
+   "caption": "Abre tu petición de oración"
+  },
+  {
+   "src": "pr",
+   "a": 9.0,
+   "b": 13.5,
+   "speed": 4
+  },
+  {
+   "src": "pr",
+   "a": 13.5,
+   "b": 16.5,
+   "caption": "Han orado por ti 129 veces…",
+   "callout": {
+    "at": 15.0,
+    "box": [
+     770,
+     990,
+     1000,
+     1075
+    ]
+   }
+  },
+  {
+   "src": "pr",
+   "a": 16.5,
+   "b": 17.6,
+   "caption": "…3 personas. Mira quiénes son.",
+   "callout": {
+    "at": 15.0,
+    "box": [
+     500,
+     990,
+     675,
+     1075
+    ]
+   },
+   "speed": 0.6
+  },
+  {
+   "src": "pr",
+   "a": 17.6,
+   "b": 21.5,
+   "speed": 1.2
+  },
+  {
+   "src": "pr",
+   "a": 22.5,
+   "b": 28.5,
+   "speed": 1.6,
+   "caption": "Cada petición incluye un versículo y una oración"
+  },
+  {
+   "src": "pr",
+   "a": 28.5,
+   "b": 30.5,
+   "caption": "Ve con qué grupos la compartiste"
+  },
+  {
+   "src": "pr",
+   "a": 30.5,
+   "b": 36.0,
+   "speed": 1.5,
+   "caption": "Responde con mensaje, nota de voz o video"
+  },
+  {
+   "src": "pr",
+   "a": 37.5,
+   "b": 55.6,
+   "speed": 3,
+   "caption": "Tus actualizaciones van aparte de los comentarios"
+  },
+  {
+   "src": "pr",
+   "a": 55.6,
+   "b": 56.6,
+   "caption": "Sean intencionales unos con otros.",
+   "hold": 1.6
+  }
+ ]
+}

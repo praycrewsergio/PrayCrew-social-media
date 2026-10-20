@@ -60,6 +60,28 @@ def background(sw, path):
     bg.save(path)
 
 
+def callout_png(src, at, box, cy, path, tmp):
+    """Zoomed 'pop-out' card of a small part of the screen (e.g. counters), taken from a still frame."""
+    fr = os.path.join(tmp, f"co_{at}.png")
+    run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(at), "-i", src, "-frames:v", "1", fr])
+    crop = Image.open(fr).convert("RGB").crop(tuple(box))
+    sc = min(660 / crop.width, 210 / crop.height)
+    crop = crop.resize((round(crop.width * sc), round(crop.height * sc)), Image.LANCZOS)
+    pad = 34; cw, ch = crop.width + 2 * pad, crop.height + 2 * pad
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    x0, y0 = (W - cw) // 2, int(cy - ch / 2)
+    sh = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(sh).rounded_rectangle((x0 + 4, y0 + 18, x0 + cw + 4, y0 + ch + 18), 40, fill=150)
+    sh = sh.filter(ImageFilter.GaussianBlur(22))
+    im.putalpha(sh)
+    card = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+    ImageDraw.Draw(card).rounded_rectangle((0, 0, cw - 1, ch - 1), 40, fill=(255, 255, 255, 255), outline=SAND + (255,), width=6)
+    card.paste(crop, (pad, pad))
+    m = Image.new("L", (cw, ch), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, cw - 1, ch - 1), 40, fill=255)
+    im.paste(card, (x0, y0), m)
+    im.save(path)
+
+
 def caption_png(label, text, path):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
@@ -93,7 +115,7 @@ def main():
     tmp = tempfile.mkdtemp()
 
     # 1. phone track: trim / speed / freeze every segment, then concatenate
-    sw = None; parts = []; caps = []; t = 0.0
+    sw = None; parts = []; caps = []; callouts = []; t = 0.0
     for i, s in enumerate(spec["segments"]):
         src = srcs[s["src"]]
         if sw is None:
@@ -115,7 +137,12 @@ def main():
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(s["a"]), "-to", str(s["b"]), "-i", src, "-an",
                  "-vf", f, "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p", p])
         if "caption" in s: caps.append([t, s["caption"]])
-        t += dur_of(p); parts.append(p)
+        d_seg = dur_of(p)
+        if "callout" in s:
+            c = s["callout"]; cp = os.path.join(tmp, f"co{i}.png")
+            callout_png(src, c["at"], c["box"], c.get("y", SCREEN_TOP + 640), cp, tmp)
+            callouts.append([t, t + d_seg, cp])
+        t += d_seg; parts.append(p)
     total = t
     lst = os.path.join(tmp, "parts.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
     phone = os.path.join(tmp, "phone.mp4")
@@ -141,6 +168,13 @@ def main():
                f"fade=t=out:st={max(d - 0.25, 0):.3f}:d=0.25:alpha=1,setpts=PTS-STARTPTS+{start:.3f}/TB[c{k}];"
                f"[{last}][c{k}]overlay=0:0:eof_action=pass[v{k + 1}]")
         last = f"v{k + 1}"
+    n = 3 + len(caps)
+    for k, (start, end, cp) in enumerate(callouts):
+        d = end - start
+        inputs += ["-loop", "1", "-t", f"{d:.3f}", "-i", cp]
+        fc += (f";[{n}:v]format=rgba,fade=t=in:st=0:d=0.2:alpha=1,fade=t=out:st={max(d - 0.2, 0):.3f}:d=0.2:alpha=1,"
+               f"setpts=PTS-STARTPTS+{start:.3f}/TB[o{k}];[{last}][o{k}]overlay=0:0:eof_action=pass[w{k}]")
+        last = f"w{k}"; n += 1
     fc += f";[{last}]format=yuv420p[v]"
     seg = os.path.join(tmp, "feature.mp4")
     run(["ffmpeg", "-nostdin", "-v", "error", "-y", *inputs, "-filter_complex", fc, "-map", "[v]", "-t", f"{total:.3f}",
