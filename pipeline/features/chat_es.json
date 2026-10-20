@@ -55,14 +55,14 @@
    "src": "c",
    "a": 30.0,
    "b": 38.0,
-   "speed": 1.6,
+   "speed": 2.5,
    "caption": "Reacciona a los mensajes"
   },
   {
    "src": "c",
    "a": 38.0,
    "b": 49.0,
-   "speed": 4
+   "speed": 6
   },
   {
    "src": "c",
@@ -73,9 +73,9 @@
   },
   {
    "src": "c",
-   "a": 75.0,
+   "a": 77.5,
    "b": 87.0,
-   "speed": 2.4,
+   "speed": 3,
    "caption": "Envía una nota de voz"
   },
   {
@@ -96,35 +96,41 @@
    "src": "c",
    "a": 113.0,
    "b": 128.0,
-   "speed": 2.4,
+   "speed": 3,
    "caption": "Graba un video"
   },
   {
    "src": "c",
    "a": 131.5,
-   "b": 163.0,
-   "speed": 6,
+   "b": 134.5,
+   "speed": 2,
    "caption": "Comparte documentos\npara tu reunión"
+  },
+  {
+   "src": "c",
+   "a": 157.0,
+   "b": 163.0,
+   "speed": 3
   },
   {
    "src": "c",
    "a": 172.0,
    "b": 197.0,
-   "speed": 4.5,
+   "speed": 8,
    "caption": "Comparte enlaces"
   },
   {
    "src": "c",
    "a": 203.0,
    "b": 233.0,
-   "speed": 5,
+   "speed": 8,
    "caption": "Crea encuestas y conoce\nlo que piensa tu grupo"
   },
   {
    "src": "c",
    "a": 263.0,
    "b": 274.0,
-   "speed": 2,
+   "speed": 3,
    "caption": "Encuentra fotos,\ndocumentos y enlaces"
   },
   {
@@ -148,7 +154,7 @@
    "src": "c",
    "a": 279.0,
    "b": 286.0,
-   "speed": 3,
+   "speed": 5,
    "caption": "Mantente conectado\ncon tu grupo.",
    "hold": 1.8
   }
