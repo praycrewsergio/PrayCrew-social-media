@@ -1,0 +1,86 @@
+{
+ "lang": "es",
+ "label": "RECORDANDO",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "r",
+   "at": 18.1,
+   "freeze": 2.6,
+   "caption": "Dios le pidió a Josué tomar\n12 piedras del Jordán…"
+  },
+  {
+   "src": "r",
+   "at": 18.1,
+   "freeze": 2.8,
+   "caption": "…un memorial, para que Israel\nnunca olvidara lo que hizo."
+  },
+  {
+   "src": "r",
+   "at": 18.1,
+   "freeze": 2.6,
+   "caption": "Recordando es el memorial\nde tu grupo."
+  },
+  {
+   "src": "r",
+   "a": 1.4,
+   "b": 3.6,
+   "caption": "Toca el corazón en tu grupo",
+   "callout": {
+    "box": [
+     700,
+     275,
+     1165,
+     395
+    ],
+    "maxw": 860,
+    "maxh": 200,
+    "at": 1.4
+   }
+  },
+  {
+   "src": "r",
+   "a": 3.6,
+   "b": 7.2,
+   "speed": 4
+  },
+  {
+   "src": "r",
+   "a": 7.2,
+   "b": 9.6,
+   "caption": "Cada mes, un video de\ntus oraciones contestadas"
+  },
+  {
+   "src": "r",
+   "a": 9.6,
+   "b": 13.2,
+   "speed": 1.5,
+   "caption": "Y uno de todo el año"
+  },
+  {
+   "src": "r",
+   "a": 13.8,
+   "b": 16.6,
+   "speed": 2
+  },
+  {
+   "src": "r",
+   "a": 17.3,
+   "b": 20.9,
+   "caption": "Revive cada oración contestada"
+  },
+  {
+   "src": "r",
+   "a": 21.4,
+   "b": 22.6,
+   "caption": "Acompañada de la Escritura",
+   "hold": 0.6
+  },
+  {
+   "src": "r",
+   "at": 22.6,
+   "freeze": 2.8,
+   "caption": "Servimos a un Dios fiel.\nRecuerda lo que ha hecho."
+  }
+ ]
+}
