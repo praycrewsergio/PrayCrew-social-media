@@ -1,0 +1,156 @@
+{
+ "lang": "es",
+ "label": "CHAT DEL GRUPO",
+ "crop_top": 150,
+ "segments": [
+  {
+   "src": "c",
+   "at": 2.0,
+   "freeze": 1.9,
+   "caption": "Un chat privado\npara cada grupo."
+  },
+  {
+   "src": "c",
+   "at": 2.0,
+   "freeze": 2.2,
+   "caption": "Solo los miembros del grupo lo ven",
+   "callout": {
+    "at": 2.0,
+    "box": [
+     700,
+     285,
+     1150,
+     385
+    ],
+    "maxw": 860,
+    "maxh": 200
+   }
+  },
+  {
+   "src": "c",
+   "a": 2.0,
+   "b": 3.5,
+   "speed": 1.5
+  },
+  {
+   "src": "c",
+   "a": 3.5,
+   "b": 8.0,
+   "speed": 3
+  },
+  {
+   "src": "c",
+   "a": 8.0,
+   "b": 15.0,
+   "speed": 2.5,
+   "caption": "Envía mensajes al instante"
+  },
+  {
+   "src": "c",
+   "a": 15.0,
+   "b": 30.0,
+   "speed": 8
+  },
+  {
+   "src": "c",
+   "a": 30.0,
+   "b": 38.0,
+   "speed": 1.6,
+   "caption": "Reacciona a los mensajes"
+  },
+  {
+   "src": "c",
+   "a": 38.0,
+   "b": 49.0,
+   "speed": 4
+  },
+  {
+   "src": "c",
+   "a": 49.0,
+   "b": 58.5,
+   "speed": 2,
+   "caption": "Los administradores pueden\nfijar lo importante"
+  },
+  {
+   "src": "c",
+   "a": 75.0,
+   "b": 87.0,
+   "speed": 2.4,
+   "caption": "Envía una nota de voz"
+  },
+  {
+   "src": "c",
+   "a": 89.0,
+   "b": 98.0,
+   "speed": 2,
+   "caption": "Toma una foto o una selfie"
+  },
+  {
+   "src": "c",
+   "a": 103.0,
+   "b": 108.5,
+   "speed": 1.6,
+   "caption": "Comparte imágenes"
+  },
+  {
+   "src": "c",
+   "a": 113.0,
+   "b": 128.0,
+   "speed": 2.4,
+   "caption": "Graba un video"
+  },
+  {
+   "src": "c",
+   "a": 131.5,
+   "b": 163.0,
+   "speed": 6,
+   "caption": "Comparte documentos\npara tu reunión"
+  },
+  {
+   "src": "c",
+   "a": 172.0,
+   "b": 197.0,
+   "speed": 4.5,
+   "caption": "Comparte enlaces"
+  },
+  {
+   "src": "c",
+   "a": 203.0,
+   "b": 233.0,
+   "speed": 5,
+   "caption": "Crea encuestas y conoce\nlo que piensa tu grupo"
+  },
+  {
+   "src": "c",
+   "a": 263.0,
+   "b": 274.0,
+   "speed": 2,
+   "caption": "Encuentra fotos,\ndocumentos y enlaces"
+  },
+  {
+   "src": "c",
+   "a": 274.0,
+   "b": 277.0,
+   "caption": "O silencia el chat\ncuando quieras",
+   "callout": {
+    "at": 275.0,
+    "box": [
+     50,
+     345,
+     1120,
+     505
+    ],
+    "maxw": 900,
+    "maxh": 160
+   }
+  },
+  {
+   "src": "c",
+   "a": 279.0,
+   "b": 286.0,
+   "speed": 3,
+   "caption": "Mantente conectado\ncon tu grupo.",
+   "hold": 1.8
+  }
+ ]
+}
