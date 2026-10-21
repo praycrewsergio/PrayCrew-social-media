@@ -18,6 +18,7 @@ SERIES = [
  ("2026-11-07", "metrics"),
  ("2026-11-09", "groupmetrics"),
  ("2026-11-10", "landing"),
+ ("2026-11-11", "smallgroups"),
 ]
 
 C = {
@@ -188,5 +189,17 @@ C = {
  ig_es="Recibe peticiones de oración a gran escala. 🙏\n\nDale a tu iglesia o ministerio una página de oración con tu marca: sin descargar la app y sin crear cuenta. Elige tus colores, agrega un título, mensaje y versículo, y comparte el enlace o insértala en tu sitio web.\n\nSabrán cada vez que oras por ellos y podrás darles seguimiento intencional.",
  q_es="¿Tu iglesia tiene una forma fácil para que los visitantes compartan una petición de oración?",
  x_es="Iglesias: reciban peticiones de oración a gran escala.\n\nUna página de oración con su marca en PrayCrew, sin descargar la app ni crear cuenta. Compartan el enlace o insértenla en su sitio web. 🙏",
+),
+"smallgroups": dict(
+ ig_en="Who do you pray with? 🙏\n\nPrayCrew is built for small groups: Bible studies, families, student groups, co-workers, missionaries, men's and moms' groups, youth groups, couples, worship teams, church staff, prayer teams, recovery groups, sports teams, neighbors… and many more.\n\nWherever two or three gather, there's a PrayCrew.\n\nWhat's your crew? Start one free.",
+ q_en="What's your crew? Tell us the group you pray with 👇",
+ x_en="Who do you pray with? 🙏\n\nBible studies, families, student groups, co-workers, youth groups, worship teams, neighbors…\n\nWherever two or three gather, there's a PrayCrew. What's your crew?",
+ tiktok="Wherever two or three gather, there's a PrayCrew 🙏 What's your crew?",
+ yt_title="Wherever Two or Three Gather, There's a PrayCrew #Shorts",
+ yt_desc="PrayCrew is built for small groups: Bible studies, families, student groups, co-workers, missionaries, men's and moms' groups, youth groups, couples, worship teams, church staff, prayer teams, recovery groups, sports teams, neighbors and many more. What's your crew? Start one free.",
+ li="Every church is really a network of small groups.\n\nBible studies, youth groups, couples, worship teams, church staff, men's and moms' groups, recovery groups, missionaries you support. Each one carries its own prayer needs.\n\nPrayCrew gives every one of those groups its own crew: a private place to share requests, pray for each other and follow up. Wherever two or three gather, there's a PrayCrew.\n\nWhich groups in your church would you start with?",
+ ig_es="¿Con quién oras tú? 🙏\n\nPrayCrew está hecho para grupos pequeños: estudios bíblicos, familias, grupos de estudiantes, compañeros de trabajo, misioneros, grupos de hombres y de mamás, jóvenes, matrimonios, equipos de alabanza, personal de la iglesia, equipos de oración, grupos de recuperación, equipos deportivos, vecinos… y muchos más.\n\nDonde se reúnan dos o tres, hay un PrayCrew.\n\n¿Cuál es tu crew? Empieza uno gratis.",
+ q_es="¿Cuál es tu crew? Cuéntanos con qué grupo oras 👇",
+ x_es="¿Con quién oras tú? 🙏\n\nEstudios bíblicos, familias, jóvenes, compañeros de trabajo, equipos de alabanza, vecinos…\n\nDonde se reúnan dos o tres, hay un PrayCrew. ¿Cuál es tu crew?",
 ),
 }
