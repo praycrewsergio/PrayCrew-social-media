@@ -7,13 +7,29 @@
    "src": "create",
    "at": 6.2,
    "freeze": 1.8,
-   "caption": "Start a prayer crew\nin under a minute."
+   "caption": "Start a prayer crew\nin under a minute.",
+   "blur": [
+    [
+     80,
+     640,
+     220,
+     240
+    ]
+   ]
   },
   {
    "src": "create",
    "a": 6.2,
    "b": 8.0,
-   "caption": "Tap New Crew"
+   "caption": "Tap New Crew",
+   "blur": [
+    [
+     80,
+     640,
+     220,
+     240
+    ]
+   ]
   },
   {
    "src": "create",

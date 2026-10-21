@@ -7,7 +7,15 @@
    "src": "u",
    "at": 6.6,
    "freeze": 2.0,
-   "caption": "No te pierdas\nla conversación."
+   "caption": "No te pierdas\nla conversación.",
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
   },
   {
    "src": "u",
@@ -25,13 +33,29 @@
     ],
     "maxw": 860,
     "maxh": 220
-   }
+   },
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
   },
   {
    "src": "u",
    "a": 7.35,
    "b": 13.4,
-   "speed": 4
+   "speed": 4,
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
   },
   {
    "src": "u",

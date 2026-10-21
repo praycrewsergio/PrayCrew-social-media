@@ -7,19 +7,43 @@
    "src": "r",
    "at": 16.3,
    "freeze": 2.6,
-   "caption": "God told Joshua to take\n12 stones from the Jordan…"
+   "caption": "God told Joshua to take\n12 stones from the Jordan…",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
    "at": 16.3,
    "freeze": 2.8,
-   "caption": "…a memorial, so Israel would\nnever forget what He did."
+   "caption": "…a memorial, so Israel would\nnever forget what He did.",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
    "at": 16.3,
    "freeze": 2.6,
-   "caption": "Remember is your\ncrew's memorial."
+   "caption": "Remember is your\ncrew's memorial.",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
@@ -36,7 +60,15 @@
     "maxw": 860,
     "maxh": 200,
     "at": 1.4
-   }
+   },
+   "blur": [
+    [
+     0,
+     1360,
+     1170,
+     960
+    ]
+   ]
   },
   {
    "src": "r",
@@ -67,11 +99,19 @@
    "src": "r",
    "a": 15.6,
    "b": 19.3,
-   "caption": "Relive every answered prayer"
+   "caption": "Relive every answered prayer",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
-   "a": 19.6,
+   "a": 20.1,
    "b": 20.6,
    "caption": "Paired with Scripture",
    "hold": 0.6

@@ -131,6 +131,20 @@ def render_chapter(ch, label, srcs, tmp, idx):
             vf = f"crop={cw}:{chh}:{cx}:{cy},scale={sw}:{SCREEN_H},setsar=1"
         else:
             vf = f"crop=iw:ih-{crop_top}:0:{crop_top},scale={sw}:{SCREEN_H},setsar=1"
+        if s.get("blur"):  # privacy: blur boxes [x, y, w, h(, t0, t1)] in source pixels/seconds, before crop/scale
+            pre = ""; t_in = s.get("a", s.get("at", 0))
+            for k, box in enumerate(s["blur"]):
+                bx, by, bw, bh = box[:4]
+                if len(box) == 6:
+                    t0, t1 = box[4], box[5]
+                    if "freeze" in s and not (t0 <= s["at"] <= t1):
+                        continue
+                    en = "" if "freeze" in s else f":enable='between(t,{t0 - t_in:.3f},{t1 - t_in:.3f})'"
+                else:
+                    en = ""
+                pre += (f"split[m{k}][c{k}];[c{k}]crop={bw}:{bh}:{bx}:{by},gblur=sigma=28:steps=3[b{k}];"
+                        f"[m{k}][b{k}]overlay={bx}:{by}{en},")
+            vf = pre + vf
         p = os.path.join(tmp, f"p{i:02d}.mp4")
         if "freeze" in s:
             run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", str(s["at"]), "-i", src, "-frames:v", "1", "-vf", vf,

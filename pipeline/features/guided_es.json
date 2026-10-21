@@ -7,7 +7,17 @@
    "src": "g",
    "at": 1.6,
    "freeze": 2.0,
-   "caption": "¿Te quedas sin palabras\nal orar?"
+   "caption": "¿Te quedas sin palabras\nal orar?",
+   "blur": [
+    [
+     200,
+     2215,
+     940,
+     100,
+     0,
+     2.0
+    ]
+   ]
   },
   {
    "src": "g",
@@ -24,7 +34,17 @@
     "maxw": 940,
     "maxh": 420,
     "at": 1.6
-   }
+   },
+   "blur": [
+    [
+     200,
+     2215,
+     940,
+     100,
+     0,
+     2.0
+    ]
+   ]
   },
   {
    "src": "g",
@@ -41,7 +61,17 @@
     "maxw": 940,
     "maxh": 300,
     "at": 1.6
-   }
+   },
+   "blur": [
+    [
+     200,
+     2215,
+     940,
+     100,
+     0,
+     2.0
+    ]
+   ]
   },
   {
    "src": "g",

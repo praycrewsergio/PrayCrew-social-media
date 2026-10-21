@@ -16,6 +16,7 @@ MEDIA_SHA = os.environ.get("MEDIA_SHA") or (open("/tmp/media_sha").read().strip(
 RAW = f"https://raw.githubusercontent.com/praycrewsergio/PrayCrew-social-media/{MEDIA_SHA}/videos/"
 EN, ES = "5449351", "5454893"
 POST_TIME = "10:00:00"
+NET_TIME = {"linkedin": "11:00:00"}  # LinkedIn peaks at 11:00 (Metricool best time)
 FIRST_COMMENT = {"en": "Drop your prayer request below 🙏 Our PrayCrew community will pray with you.",
                  "es": "Deja tu petición de oración aquí abajo 🙏 Nuestra comunidad de PrayCrew orará contigo."}
 FIRST_COMMENT_NETS = {"instagram", "linkedin", "youtube"}
@@ -40,6 +41,7 @@ def payloads(date_str):
     d = datetime.datetime.fromisoformat(when).replace(tzinfo=ZoneInfo("America/Chicago")).isoformat()
 
     def base(lang, net, text):
+        when = f"{date_str}T{NET_TIME.get(net, POST_TIME)}"
         return {"autoPublish": True, "draft": False, "descendants": [],
                 "firstCommentText": FIRST_COMMENT[lang] if net in FIRST_COMMENT_NETS else "", "hasNotReadNotes": False,
                 "media": [f"{RAW}{date_str}_{lang}.mp4"], "mediaAltText": [], "providers": [{"network": net}],
@@ -105,5 +107,7 @@ if __name__ == "__main__":
     if errs:
         sys.exit("COPY CHECK FAILED:\n" + "\n".join(errs))
     d, posts = payloads(ds)
+    from zoneinfo import ZoneInfo
     for blog, net, p in posts:
+        d = datetime.datetime.fromisoformat(p["publicationDate"]["dateTime"]).replace(tzinfo=ZoneInfo("America/Chicago")).isoformat()
         print(json.dumps({"blogId": blog, "date": d, "network": net, "info": json.dumps(p, ensure_ascii=False)}, ensure_ascii=False))

@@ -24,7 +24,15 @@
     "maxw": 420,
     "maxh": 260,
     "at": 1.6
-   }
+   },
+   "blur": [
+    [
+     0,
+     1360,
+     1170,
+     960
+    ]
+   ]
   },
   {
    "src": "g",
@@ -43,24 +51,60 @@
    "src": "g",
    "a": 11.2,
    "b": 13.6,
-   "caption": "Who's asking for prayer\nand who's praying"
+   "caption": "Who's asking for prayer\nand who's praying",
+   "blur": [
+    [
+     100,
+     1900,
+     800,
+     632
+    ]
+   ]
   },
   {
    "src": "g",
-   "a": 13.6,
-   "b": 16.0,
-   "caption": "Your crew's answered\nprayer rate"
+   "at": 14.2,
+   "freeze": 2.4,
+   "caption": "Your crew's answered\nprayer rate",
+   "blur": [
+    [
+     100,
+     1960,
+     800,
+     572
+    ]
+   ]
   },
   {
    "src": "g",
-   "a": 16.0,
-   "b": 20.8,
-   "speed": 1.6,
-   "caption": "Your most faithful\nprayer warriors"
+   "at": 17.4,
+   "freeze": 2.6,
+   "caption": "Your most faithful\nprayer warriors",
+   "blur": [
+    [
+     100,
+     950,
+     760,
+     1250
+    ]
+   ]
   },
   {
    "src": "g",
-   "a": 20.8,
+   "at": 19.0,
+   "freeze": 2.2,
+   "blur": [
+    [
+     100,
+     820,
+     760,
+     1300
+    ]
+   ]
+  },
+  {
+   "src": "g",
+   "a": 21.4,
    "b": 23.2,
    "caption": "What your crew is\npraying about"
   },

@@ -18,6 +18,7 @@ mkdir -p videos
 n=0
 for f in "$SRC"/*.mp4; do
   b=$(basename "$f"); d=${b%%_*}
+  [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || continue
   if [[ "$d" > "$TODAY" || "$d" == "$TODAY" ]]; then cp "$f" videos/; n=$((n+1)); fi
 done
 if [ -d "$SRC/recap" ]; then
@@ -27,6 +28,12 @@ if [ -d "$SRC/recap" ]; then
     b=$(basename "$dir"); d=${b%%_*}
     if [[ "$d" > "$TODAY" || "$d" == "$TODAY" ]]; then cp -r "$dir" videos/recap/; n=$((n+1)); fi
   done
+fi
+# Feature-education series (one-off scheduling): FEATURES=1 bash publish_media.sh
+if [ "${FEATURES:-0}" = "1" ]; then
+  mkdir -p videos/features
+  for f in "$SRC"/feature_*.mp4; do b=$(basename "$f" .mp4); cp "$f" "videos/features/${b#feature_}.mp4"; n=$((n+1)); done
+  for f in "$SRC"/story_*.mp4; do cp "$f" videos/features/; n=$((n+1)); done
 fi
 echo "Upcoming videos for Metricool (auto-published by the daily verse task)." > videos/README.md
 git add videos

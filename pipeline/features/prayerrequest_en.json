@@ -7,13 +7,33 @@
    "src": "pr",
    "at": 2.6,
    "freeze": 1.9,
-   "caption": "Who's praying for you?\nNow you'll know."
+   "caption": "Who's praying for you?\nNow you'll know.",
+   "blur": [
+    [
+     0,
+     2150,
+     1170,
+     230,
+     0,
+     4.7
+    ]
+   ]
   },
   {
    "src": "pr",
    "a": 2.6,
    "b": 4.7,
-   "caption": "Open your prayer request"
+   "caption": "Open your prayer request",
+   "blur": [
+    [
+     0,
+     2150,
+     1170,
+     230,
+     0,
+     4.7
+    ]
+   ]
   },
   {
    "src": "pr",

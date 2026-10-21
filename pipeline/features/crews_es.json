@@ -1,13 +1,89 @@
-{"lang": "es", "label": "GRUPOS", "crop_top": 150,
+{
+ "lang": "es",
+ "label": "GRUPOS",
+ "crop_top": 150,
  "segments": [
-  {"src": "create", "at": 4.2, "freeze": 1.8, "caption": "Crea tu grupo de oración\nen menos de un minuto."},
-  {"src": "create", "a": 4.2, "b": 6.2, "caption": "Toca Nuevo grupo"},
-  {"src": "create", "a": 6.2, "b": 24.5, "speed": 5, "caption": "Ponle un nombre"},
-  {"src": "create", "a": 34.0, "b": 38.5, "speed": 1.5, "caption": "Elige cómo se reparten las peticiones"},
-  {"src": "create", "a": 38.5, "b": 43.0, "speed": 2.5},
-  {"src": "create", "a": 48.0, "b": 52.5, "speed": 1.6, "caption": "Comparte el código QR de tu grupo"},
-  {"src": "create", "a": 52.5, "b": 58.5, "speed": 1.2, "hold": 0.4},
-  {"src": "join", "a": 5.0, "b": 9.2, "caption": "Tus miembros lo escanean y piden unirse", "hold": 0.6},
-  {"src": "approve", "a": 7.0, "b": 10.2, "caption": "Apruébalos con un toque"},
-  {"src": "approve", "a": 12.8, "b": 14.0, "caption": "Ahora oran juntos.", "hold": 1.8}
- ]}
+  {
+   "src": "create",
+   "at": 4.2,
+   "freeze": 1.8,
+   "caption": "Crea tu grupo de oración\nen menos de un minuto.",
+   "blur": [
+    [
+     80,
+     640,
+     220,
+     240
+    ]
+   ]
+  },
+  {
+   "src": "create",
+   "a": 4.2,
+   "b": 6.2,
+   "caption": "Toca Nuevo grupo",
+   "blur": [
+    [
+     80,
+     640,
+     220,
+     240
+    ]
+   ]
+  },
+  {
+   "src": "create",
+   "a": 6.2,
+   "b": 24.5,
+   "speed": 5,
+   "caption": "Ponle un nombre"
+  },
+  {
+   "src": "create",
+   "a": 34.0,
+   "b": 38.5,
+   "speed": 1.5,
+   "caption": "Elige cómo se reparten las peticiones"
+  },
+  {
+   "src": "create",
+   "a": 38.5,
+   "b": 43.0,
+   "speed": 2.5
+  },
+  {
+   "src": "create",
+   "a": 48.0,
+   "b": 52.5,
+   "speed": 1.6,
+   "caption": "Comparte el código QR de tu grupo"
+  },
+  {
+   "src": "create",
+   "a": 52.5,
+   "b": 58.5,
+   "speed": 1.2,
+   "hold": 0.4
+  },
+  {
+   "src": "join",
+   "a": 5.0,
+   "b": 9.2,
+   "caption": "Tus miembros lo escanean y piden unirse",
+   "hold": 0.6
+  },
+  {
+   "src": "approve",
+   "a": 7.0,
+   "b": 10.2,
+   "caption": "Apruébalos con un toque"
+  },
+  {
+   "src": "approve",
+   "a": 12.8,
+   "b": 14.0,
+   "caption": "Ahora oran juntos.",
+   "hold": 1.8
+  }
+ ]
+}

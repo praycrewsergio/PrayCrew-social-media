@@ -10,14 +10,30 @@
      "src": "web",
      "at": 3.2,
      "freeze": 2.3,
-     "caption": "Collect prayer requests\nat scale."
+     "caption": "Collect prayer requests\nat scale.",
+     "blur": [
+      [
+       965,
+       635,
+       500,
+       55
+      ]
+     ]
     },
     {
      "src": "web",
      "a": 3.2,
      "b": 7.3,
      "speed": 1.2,
-     "caption": "No app download.\nNo account needed."
+     "caption": "No app download.\nNo account needed.",
+     "blur": [
+      [
+       965,
+       635,
+       500,
+       55
+      ]
+     ]
     }
    ],
    "crop": [
@@ -34,22 +50,72 @@
     {
      "src": "app",
      "a": 2.0,
-     "b": 12.5,
+     "b": 2.7,
      "speed": 4,
-     "caption": "Here's how to set it up"
+     "caption": "Here's how to set it up",
+     "blur": [
+      [
+       0,
+       2170,
+       1170,
+       170
+      ]
+     ]
+    },
+    {
+     "src": "app",
+     "a": 2.7,
+     "b": 10.4,
+     "speed": 4,
+     "blur": [
+      [
+       90,
+       280,
+       220,
+       2040
+      ]
+     ]
+    },
+    {
+     "src": "app",
+     "a": 10.4,
+     "b": 12.5,
+     "speed": 4
     },
     {
      "src": "app",
      "at": 13.0,
      "freeze": 2.2,
-     "caption": "Your prayer team joins the\ncrew as prayer warriors"
+     "caption": "Your prayer team joins the\ncrew as prayer warriors",
+     "blur": [
+      [
+       0,
+       1290,
+       1170,
+       640
+      ]
+     ]
     },
     {
      "src": "app",
      "a": 13.0,
-     "b": 21.0,
+     "b": 13.6,
      "speed": 3,
-     "caption": "Open your crew's settings"
+     "caption": "Open your crew's settings",
+     "blur": [
+      [
+       0,
+       1290,
+       1170,
+       640
+      ]
+     ]
+    },
+    {
+     "src": "app",
+     "a": 13.6,
+     "b": 21.0,
+     "speed": 3
     },
     {
      "src": "app",
@@ -114,25 +180,73 @@
      "a": 12.3,
      "b": 21.7,
      "speed": 1.5,
-     "caption": "Make it your own."
+     "caption": "Make it your own.",
+     "blur": [
+      [
+       1015,
+       785,
+       330,
+       125,
+       16.0,
+       17.6
+      ],
+      [
+       1015,
+       760,
+       330,
+       80,
+       17.6,
+       22.5
+      ]
+     ]
     },
     {
      "src": "web",
      "at": 21.5,
      "freeze": 2.6,
-     "caption": "They'll know every time\nyou pray for them."
+     "caption": "They'll know every time\nyou pray for them.",
+     "blur": [
+      [
+       1015,
+       760,
+       330,
+       80,
+       17.6,
+       22.5
+      ]
+     ]
     },
     {
      "src": "web",
      "at": 21.5,
      "freeze": 2.6,
-     "caption": "See what your community\nneeds prayer for."
+     "caption": "See what your community\nneeds prayer for.",
+     "blur": [
+      [
+       1015,
+       760,
+       330,
+       80,
+       17.6,
+       22.5
+      ]
+     ]
     },
     {
      "src": "web",
      "at": 21.5,
      "freeze": 2.4,
-     "caption": "Follow up intentionally.\nServe them better."
+     "caption": "Follow up intentionally.\nServe them better.",
+     "blur": [
+      [
+       1015,
+       760,
+       330,
+       80,
+       17.6,
+       22.5
+      ]
+     ]
     }
    ],
    "crop": [

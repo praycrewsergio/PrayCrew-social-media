@@ -1,6 +1,6 @@
 # PrayCrew daily verse — runbook
 
-Goal: every day has a "Verse of the Day" post at 10:00 America/Chicago on all 7 accounts:
+Goal: every day has a "Verse of the Day" post at 10:00 America/Chicago (LinkedIn 11:00) on all 7 accounts:
 - PrayCrew English (Metricool blogId 5449351): Instagram Reel, X, TikTok, YouTube Short, LinkedIn — one post each
 - PrayCrew Espanol (blogId 5454893): Instagram Reel, X — one post each
 
@@ -12,7 +12,8 @@ Sundays: weekly recap carousel at 18:00 (Instagram EN+ES, LinkedIn document, Tik
 1. Setup: `pip install --break-system-packages pillow` if missing; `ffmpeg` must exist.
 2. For each date D from today through today+7 (America/Chicago):
    call Metricool `getScheduledPosts` for both brands for D. A day is covered when there are
-   10:00 posts for EN instagram, twitter, tiktok, youtube, linkedin and ES instagram, twitter.
+   10:00 posts for EN instagram, twitter, tiktok, youtube and ES instagram, twitter, plus an 11:00 EN linkedin post
+   (older days may still have LinkedIn at 10:00; either counts).
    Collect the uncovered dates (usually just today+7).
 3. For each uncovered date: `day = (D - 2026-10-20).days + 1`
    - FIRST write `copy/D.json` following `COPY_GUIDE.md` (read the verse from `batch.day_info(day)`), including key_en/key_es.
@@ -28,4 +29,8 @@ Sundays: weekly recap carousel at 18:00 (Instagram EN+ES, LinkedIn document, Tik
 6. Commit `copy/*.json` to `main` and push.
 7. Re-check with `getScheduledPosts`; report any day/network still missing.
 
-Never edit or delete posts the user created themselves (posts not at 10:00 or not made by this pipeline).
+Never edit or delete posts the user created themselves (posts not made by this pipeline).
+
+Feature-education series (separate from the daily verse): `features/feature_copy.py` + `features/posts.py`,
+videos rendered by `render_features.py` from `features/<name>.json`. Feature posts go out at X 12:00, LinkedIn 13:00,
+YouTube 16:00, Instagram/TikTok 18:00. They are scheduled once by hand; the daily task must not touch them.

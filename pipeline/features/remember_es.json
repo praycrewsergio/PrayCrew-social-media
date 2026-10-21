@@ -7,19 +7,43 @@
    "src": "r",
    "at": 18.1,
    "freeze": 2.6,
-   "caption": "Dios le pidió a Josué tomar\n12 piedras del Jordán…"
+   "caption": "Dios le pidió a Josué tomar\n12 piedras del Jordán…",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
    "at": 18.1,
    "freeze": 2.8,
-   "caption": "…un memorial, para que Israel\nnunca olvidara lo que hizo."
+   "caption": "…un memorial, para que Israel\nnunca olvidara lo que hizo.",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
    "at": 18.1,
    "freeze": 2.6,
-   "caption": "Recordando es el memorial\nde tu grupo."
+   "caption": "Recordando es el memorial\nde tu grupo.",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
@@ -36,7 +60,15 @@
     "maxw": 860,
     "maxh": 200,
     "at": 1.4
-   }
+   },
+   "blur": [
+    [
+     0,
+     1360,
+     1170,
+     960
+    ]
+   ]
   },
   {
    "src": "r",
@@ -67,18 +99,26 @@
    "src": "r",
    "a": 17.3,
    "b": 20.9,
-   "caption": "Revive cada oración contestada"
+   "caption": "Revive cada oración contestada",
+   "blur": [
+    [
+     60,
+     560,
+     1050,
+     1400
+    ]
+   ]
   },
   {
    "src": "r",
-   "a": 21.4,
-   "b": 22.6,
+   "a": 21.6,
+   "b": 22.4,
    "caption": "Acompañada de la Escritura",
    "hold": 0.6
   },
   {
    "src": "r",
-   "at": 22.6,
+   "at": 22.2,
    "freeze": 2.8,
    "caption": "Servimos a un Dios fiel.\nRecuerda lo que ha hecho."
   }

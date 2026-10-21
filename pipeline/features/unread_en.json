@@ -1,12 +1,138 @@
-{"lang": "en", "label": "UNREAD MESSAGES", "crop_top": 150,
+{
+ "lang": "en",
+ "label": "UNREAD MESSAGES",
+ "crop_top": 150,
  "segments": [
-  {"src": "u", "at": 7.0, "freeze": 2.0, "caption": "Don't miss\nthe conversation."},
-  {"src": "u", "a": 7.0, "b": 12.6, "speed": 1.5, "caption": "Red circles show what\nyou haven't read", "callout": {"at": 8.0, "box": [280, 1285, 960, 1450], "maxw": 860, "maxh": 220}},
-  {"src": "u", "a": 12.6, "b": 15.0, "speed": 2.5},
-  {"src": "u", "a": 15.0, "b": 20.6, "speed": 1.5, "caption": "See which prayer request\nhas new messages", "callout": {"at": 17.0, "box": [140, 1600, 950, 1680], "maxw": 900, "maxh": 140}},
-  {"src": "u", "a": 20.6, "b": 24.0, "speed": 3},
-  {"src": "u", "a": 24.0, "b": 27.6, "caption": "Catch up on every comment"},
-  {"src": "u", "a": 27.6, "b": 30.0, "speed": 3},
-  {"src": "u", "a": 30.0, "b": 34.6, "speed": 1.5, "caption": "You're all caught up.", "callout": {"at": 32.0, "box": [140, 1600, 950, 1680], "maxw": 900, "maxh": 140}},
-  {"src": "u", "a": 34.6, "b": 37.2, "caption": "Be part of the conversation.", "hold": 1.6}
- ]}
+  {
+   "src": "u",
+   "at": 7.0,
+   "freeze": 2.0,
+   "caption": "Don't miss\nthe conversation.",
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
+  },
+  {
+   "src": "u",
+   "a": 7.0,
+   "b": 12.6,
+   "speed": 1.5,
+   "caption": "Red circles show what\nyou haven't read",
+   "callout": {
+    "at": 8.0,
+    "box": [
+     280,
+     1285,
+     960,
+     1450
+    ],
+    "maxw": 860,
+    "maxh": 220
+   },
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
+  },
+  {
+   "src": "u",
+   "a": 12.6,
+   "b": 15.0,
+   "speed": 2.5,
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
+  },
+  {
+   "src": "u",
+   "a": 15.0,
+   "b": 20.6,
+   "speed": 1.5,
+   "caption": "See which prayer request\nhas new messages",
+   "callout": {
+    "at": 17.0,
+    "box": [
+     140,
+     1600,
+     950,
+     1680
+    ],
+    "maxw": 900,
+    "maxh": 140
+   }
+  },
+  {
+   "src": "u",
+   "a": 20.6,
+   "b": 24.0,
+   "speed": 3
+  },
+  {
+   "src": "u",
+   "a": 24.0,
+   "b": 27.6,
+   "caption": "Catch up on every comment"
+  },
+  {
+   "src": "u",
+   "a": 27.6,
+   "b": 30.0,
+   "speed": 3
+  },
+  {
+   "src": "u",
+   "a": 30.0,
+   "b": 34.6,
+   "speed": 1.5,
+   "caption": "You're all caught up.",
+   "callout": {
+    "at": 32.0,
+    "box": [
+     140,
+     1600,
+     950,
+     1680
+    ],
+    "maxw": 900,
+    "maxh": 140
+   },
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
+  },
+  {
+   "src": "u",
+   "a": 34.6,
+   "b": 37.2,
+   "caption": "Be part of the conversation.",
+   "hold": 1.6,
+   "blur": [
+    [
+     90,
+     620,
+     200,
+     260
+    ]
+   ]
+  }
+ ]
+}
