@@ -19,6 +19,7 @@ SERIES = [
  ("2026-11-09", "groupmetrics"),
  ("2026-11-10", "landing"),
  ("2026-11-11", "smallgroups"),
+ ("2026-11-12", "recap"),
 ]
 
 C = {
@@ -201,5 +202,17 @@ C = {
  ig_es="¿Con quién oras tú? 🙏\n\nPrayCrew está hecho para grupos pequeños: estudios bíblicos, familias, grupos de estudiantes, compañeros de trabajo, misioneros, grupos de hombres y de mamás, jóvenes, matrimonios, equipos de alabanza, personal de la iglesia, equipos de oración, grupos de recuperación, equipos deportivos, vecinos… y muchos más.\n\nDonde se reúnan dos o tres, hay un PrayCrew.\n\n¿Cuál es tu crew? Empieza uno gratis.",
  q_es="¿Cuál es tu crew? Cuéntanos con qué grupo oras 👇",
  x_es="¿Con quién oras tú? 🙏\n\nEstudios bíblicos, familias, jóvenes, compañeros de trabajo, equipos de alabanza, vecinos…\n\nDonde se reúnan dos o tres, hay un PrayCrew. ¿Cuál es tu crew?",
+),
+"recap": dict(
+ ig_en="Everything PrayCrew does, in 60 seconds. 🙏\n\nPRAY: prayer requests, follow-up, prayer notifications, Verse of the Day and guided prayer.\nTOGETHER: crews, QR invites, sign in with Apple or Gmail, crew chat, unread messages.\nGROW: Remember, personal and group metrics, and a branded prayer page for your church.\n\nWherever two or three gather, there's a PrayCrew. Which feature would you use first?",
+ q_en="Which PrayCrew feature would you use first? 👇",
+ x_en="Everything PrayCrew does, in 60 seconds. 🙏\n\nPray: requests, follow-up, notifications, guided prayer.\nTogether: crews, chat, QR invites.\nGrow: Remember, metrics, a branded prayer page.\n\nWhich would you use first?",
+ tiktok="Everything PrayCrew does in 60 seconds 🙏 Which feature would you use first?",
+ yt_title="Everything PrayCrew Does in 60 Seconds #Shorts",
+ yt_desc="A quick recap of every PrayCrew feature: prayer requests, follow-up, prayer notifications, Verse of the Day and guided prayer, crews, QR invites, single sign-on, crew chat, unread messages, Remember, personal metrics, group metrics and the branded prayer page.",
+ li="Over the last few weeks we've walked through PrayCrew one feature at a time. Here's all of it in 60 seconds.\n\nPray: prayer requests that show who's praying, one-tap follow-up with messages, voice notes and video, prayer notifications, and a daily verse and guided prayer.\n\nTogether: crews for every small group, QR invites, single sign-on, a private crew chat and unread indicators.\n\nGrow: Remember videos of answered prayers, personal and group metrics, and a branded prayer page that collects requests from your whole community.\n\nIf you lead a church or ministry and want a walkthrough for your team, send me a message.",
+ ig_es="Todo lo que hace PrayCrew, en 60 segundos. 🙏\n\nORA: peticiones de oración, seguimiento, notificaciones, versículo del día y oración guiada.\nJUNTOS: grupos, invitaciones con QR, inicio con Apple o Gmail, chat del grupo, mensajes sin leer.\nCRECE: Recordando, métricas personales y del grupo, y una página de oración con la marca de tu iglesia.\n\nDonde se reúnan dos o tres, hay un PrayCrew. ¿Qué función usarías primero?",
+ q_es="¿Qué función de PrayCrew usarías primero? 👇",
+ x_es="Todo lo que hace PrayCrew, en 60 segundos. 🙏\n\nOra: peticiones, seguimiento, notificaciones, oración guiada.\nJuntos: grupos, chat, invitaciones con QR.\nCrece: Recordando, métricas, página de oración.\n\n¿Cuál usarías primero?",
 ),
 }
