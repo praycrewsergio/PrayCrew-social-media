@@ -79,7 +79,7 @@ def full(lang, out):
             parts.append(scene_file(pg, i, lang, tmp)); print("scene", i, flush=True)
         b.close()
     end = os.path.join(tmp, "z_end.mp4")
-    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", f"{ASSETS}/endcard_{lang}.mp4", "-vf", "scale=1080:1920,setsar=1,fps=30,format=yuv420p", *ENC, end], check=True)
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", "6", "-i", f"{ASSETS}/endcard_{lang}.mp4", "-vf", "scale=1080:1920,setsar=1,fps=30,format=yuv420p", *ENC, end], check=True)
     parts.append(end)
     lst = os.path.join(tmp, "l.txt"); open(lst, "w").write("".join(f"file '{x}'\n" for x in parts))
     joined = os.path.join(tmp, "j.mp4")
