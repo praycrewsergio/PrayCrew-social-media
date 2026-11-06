@@ -23,6 +23,7 @@ SERIES = [
  ("2026-11-16", "smallgroupstory"),
  ("2026-11-23", "churchstory"),
  ("2026-11-30", "missionsstory"),
+ ("2026-12-07", "globalstory"),
 ]
 
 C = {
@@ -253,5 +254,17 @@ C = {
  ig_es="Una misión. Muchas naciones. 🙏\n\nMisioneros sirven a grupos pequeños alrededor del mundo, y cada grupo comparte sus peticiones en su propio grupo de PrayCrew. Desde casa, la organización asigna guerreros de oración a cada grupo. Cada oración llega al campo como una notificación, con mensajes, notas de voz y video.\n\nLos misioneros ven por qué está orando su comunidad. El liderazgo ve todos los grupos en un solo portal: peticiones, oraciones ofrecidas, personas alcanzadas y números reales para mostrar el impacto a sus donantes.\n\nCada misionero cubierto en oración. Cada comunidad mejor entendida.",
  q_es="¿Apoyas a misioneros? ¿Cómo oras por ellos hoy? 👇",
  x_es="Misioneros alrededor del mundo, nunca solos en oración. 🙏\n\nGuerreros de oración oran por cada grupo, los misioneros ven las necesidades de su comunidad y los líderes ven el impacto en números reales.",
+),
+"globalstory": dict(
+ ig_en="One ministry. A global audience. 🙏\n\nWith PrayCrew, prayer warriors are organized by region or country. People anywhere in the world submit prayer requests through the ministry's web form, with no app and no account, and each request goes to the right region.\n\nA warrior prays and follows up personally with a message, voice note or video. Not an automated reply: intentional prayer, walking in faith with them.\n\nThe ministry sees prayers, people and topics by region in one dashboard, so it understands what its community is going through and serves them better.",
+ q_en="If you lead a ministry online, how do you follow up with prayer requests today? 👇",
+ x_en="A global ministry. Prayer warriors by region. 🙏\n\nPeople submit requests on the web, a warrior prays and follows up personally, and leaders see what the community is going through.",
+ tiktok="How a global ministry follows up on every prayer request 🙏",
+ yt_title="How a Global Ministry Uses PrayCrew #Shorts",
+ yt_desc="See how a global ministry uses PrayCrew: prayer warriors organized by region or country, an audience that submits prayer requests through a web form with no app or account, personal follow-up by message, voice note or video, and a dashboard with prayers, people and topics by region to understand the community and serve it better.",
+ li="Large ministries receive prayer requests from every corner of the world. The hard part is answering each one intentionally, and learning from them.\n\nWith PrayCrew, prayer warriors are organized into crews by region or country. People submit requests through the ministry's web form, with no app to download and no account to create, and each request is routed to the right region. A warrior prays and follows up personally with a message, voice note or video, so every person feels someone is walking in faith with them.\n\nLeadership sees prayers offered, people reached and prayer topics by region in one dashboard, a clear picture of what the audience is going through and where to focus content, resources and care.",
+ ig_es="Un ministerio. Una audiencia global. 🙏\n\nCon PrayCrew, los guerreros de oración se organizan por región o país. Personas en todo el mundo envían sus peticiones en el formulario web del ministerio, sin app y sin cuenta, y cada petición llega a la región correcta.\n\nUn guerrero ora y da seguimiento personal con mensaje, nota de voz o video. No una respuesta automática: oración intencional, caminando en fe con ellos.\n\nEl ministerio ve oraciones, personas y temas por región en un solo tablero, para entender lo que vive su comunidad y servirla mejor.",
+ q_es="Si lideras un ministerio en línea, ¿cómo das seguimiento hoy a las peticiones de oración? 👇",
+ x_es="Un ministerio global. Guerreros de oración por región. 🙏\n\nLas personas envían sus peticiones en la web, un guerrero ora y da seguimiento personal, y los líderes ven lo que vive la comunidad.",
 ),
 }
