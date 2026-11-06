@@ -20,6 +20,7 @@ SERIES = [
  ("2026-11-10", "landing"),
  ("2026-11-11", "smallgroups"),
  ("2026-11-12", "recap"),
+ ("2026-11-16", "smallgroupstory"),
 ]
 
 C = {
@@ -214,5 +215,17 @@ C = {
  ig_es="Todo lo que hace PrayCrew, en 60 segundos. 🙏\n\nORA: peticiones de oración, seguimiento, notificaciones, versículo del día y oración guiada.\nJUNTOS: grupos, invitaciones con QR, inicio con Apple o Gmail, chat del grupo, mensajes sin leer.\nCRECE: Recordando, métricas personales y del grupo, y una página de oración con la marca de tu iglesia.\n\nDonde se reúnan dos o tres, hay un PrayCrew. ¿Qué función usarías primero?",
  q_es="¿Qué función de PrayCrew usarías primero? 👇",
  x_es="Todo lo que hace PrayCrew, en 60 segundos. 🙏\n\nOra: peticiones, seguimiento, notificaciones, oración guiada.\nJuntos: grupos, chat, invitaciones con QR.\nCrece: Recordando, métricas, página de oración.\n\n¿Cuál usarías primero?",
+),
+"smallgroupstory": dict(
+ ig_en="One small group. One month. 🙏\n\nTen friends gather around the table and share what's on their hearts. Then everyone goes home… but the praying doesn't stop.\n\nWith PrayCrew they get a notification every time someone prays, follow up with a message, voice note or selfie, stay connected in a private crew chat, and the leader sees what the group is carrying. Next month they come back with answered prayers.\n\nWherever two or three gather, there's a PrayCrew. Start your crew free.",
+ q_en="Does your small group pray for each other between meetings? Tell us how 👇",
+ x_en="Ten friends share prayer requests around the table. Then everyone goes home… but the praying doesn't stop. 🙏\n\nThis is a small group's month with PrayCrew.",
+ tiktok="Your small group goes home… but the praying doesn't stop 🙏",
+ yt_title="How a Small Group Uses PrayCrew for a Whole Month #Shorts",
+ yt_desc="Follow a small group through one month with PrayCrew: they join with a QR code, share prayer requests, get notified every time someone prays, follow up with messages, voice notes and selfies, stay connected in a private chat, the leader sees the group's needs with group metrics, and next month they come back with answered prayers.",
+ li="What happens to your small group's prayer requests between meetings?\n\nIn most groups, requests are shared around the table and then forgotten until the next gathering. This short story shows a small group's month with PrayCrew: they join with a QR code, every request lives in the crew, members are notified each time someone prays, they follow up with messages, voice notes and selfies, and the leader sees what the group is carrying through group metrics.\n\nNext month they come back with answered prayers to celebrate.\n\nIf you lead small groups at your church, this is what we built PrayCrew for.",
+ ig_es="Un grupo pequeño. Un mes. 🙏\n\nDiez amigos se reúnen alrededor de la mesa y comparten lo que hay en su corazón. Luego cada quien se va a casa… pero la oración no se detiene.\n\nCon PrayCrew reciben una notificación cada vez que alguien ora, dan seguimiento con mensaje, nota de voz o selfie, siguen conectados en un chat privado, y el líder ve lo que el grupo está cargando. Al mes siguiente regresan con oraciones contestadas.\n\nDonde se reúnan dos o tres, hay un PrayCrew. Empieza tu grupo gratis.",
+ q_es="¿Tu grupo ora unos por otros entre reuniones? Cuéntanos cómo 👇",
+ x_es="Diez amigos comparten sus peticiones alrededor de la mesa. Luego cada quien se va a casa… pero la oración no se detiene. 🙏\n\nAsí es un mes de un grupo pequeño con PrayCrew.",
 ),
 }
