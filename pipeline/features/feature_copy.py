@@ -26,6 +26,8 @@ SERIES = [
  ("2026-11-19", "globalstory"),
  ("2026-11-20", "creatorstory"),
  ("2026-11-23", "eventstory"),
+ ("2026-11-24", "familystory"),
+ ("2026-11-25", "jamesstory"),
 ]
 
 C = {
@@ -292,5 +294,29 @@ C = {
  ig_es="El evento termina. La oración no. 🙏\n\nArtistas y conferencistas: puede haber un equipo de oración al frente, pero para la persona en la última fila, pasar al frente no es fácil. Con PrayCrew, todos pueden recibir oración.\n\nCrea tu ministerio de oración e invita a tu equipo. Pon el código QR en la pantalla y agrega el formulario a tu sitio web. Los asistentes comparten su petición en segundos, sin app.\n\nTu equipo ora por cada petición y, después del evento, sigues presente: seguimiento personal con nota de voz o video, una experiencia única de intencionalidad.\n\nEntenderás mejor lo que vive tu audiencia y reunirás testimonios de oraciones contestadas.",
  q_es="Artistas y conferencistas: ¿cómo cuidan a su audiencia cuando termina el evento? 👇",
  x_es="El evento termina. La oración no. 🙏\n\nCon PrayCrew, todos en el lugar pueden recibir oración, incluso la última fila. Tu equipo ora, da seguimiento después del evento y tú ves lo que vive tu audiencia.",
+),
+"familystory": dict(
+ ig_en="A family that prays together. 🙏\n\nIt starts at home: husband and wife, a crew just for the two of them, sharing what's on their hearts and praying for each other even on the busiest days.\n\nThen the whole family joins: five kids and their spouses, in five different cities, all in one crew. Everyone knows what the others are going through, from a baby on the way to a job interview to Dad's surgery.\n\nA notification every time someone in your family prays for you. Voice notes and videos to encourage each other. And every answered prayer remembered together.\n\nDistance can't divide a family that prays together.",
+ q_en="Does your family have a way to pray for each other during the week? 👇",
+ x_en="Five kids. Five cities. One family crew. 🙏\n\nWith PrayCrew, families share what they're going through and pray for one another, wherever they live.",
+ tiktok="Distance can't divide a family that prays together 🙏",
+ yt_title="A Family That Prays Together with PrayCrew #Shorts",
+ yt_desc="See how a family uses PrayCrew: a husband and wife with their own prayer crew, then the whole extended family, five kids and their spouses in different cities, sharing prayer requests, getting notified when someone prays, encouraging each other with voice notes and video, and remembering every answered prayer together.",
+ li="Families today are spread across cities and even countries. Staying close takes intention.\n\nWith PrayCrew, it can start with a husband and wife sharing what's on their hearts and praying for each other, even on the busiest days. Then the whole family joins one crew: parents, kids and their spouses, wherever they live.\n\nEveryone knows what the others are going through. Each prayer sends a notification, family members encourage each other with voice notes and video, and answered prayers are remembered together.\n\nDistance can't divide a family that prays together.",
+ ig_es="Una familia que ora unida. 🙏\n\nEmpieza en casa: esposo y esposa, un grupo solo para los dos, compartiendo lo que hay en su corazón y orando el uno por el otro aun en los días más ocupados.\n\nLuego se une toda la familia: cinco hijos y sus esposos, en cinco ciudades distintas, todos en un solo grupo. Todos saben lo que los demás están viviendo, desde un bebé en camino hasta una entrevista de trabajo o la cirugía de papá.\n\nUna notificación cada vez que alguien de tu familia ora por ti. Notas de voz y videos para animarse. Y cada oración contestada, recordada juntos.\n\nLa distancia no puede dividir a una familia que ora unida.",
+ q_es="¿Tu familia tiene una forma de orar unos por otros durante la semana? 👇",
+ x_es="Cinco hijos. Cinco ciudades. Un grupo familiar. 🙏\n\nCon PrayCrew, las familias comparten lo que viven y oran unos por otros, vivan donde vivan.",
+),
+"jamesstory": dict(
+ ig_en="James didn't beat cancer alone. 🙏\n\nA true story about prayer, family, and what it means to never feel forgotten.\n\nTwo years ago, James received a diagnosis that changed everything. Cancer. His sons and daughters made a decision together: they would fast, they would pray, and they would believe God for a miracle. Every single day.\n\nBefore every chemotherapy session, James's phone lit up with notifications. His daughter. His son. His wife. Each one letting him know: we are praying for you right now.\n\nFor an entire year, his family showed up. Not just in the room. In prayer. Consistently. Intentionally. Together.\n\nBy the grace of God, James is cancer free today.",
+ q_en="Who in your family needs to know you're praying for them today? 👇",
+ x_en="James didn't beat cancer alone. 🙏\n\nBefore every chemo session, his phone lit up: his daughter, his son, his wife, all praying for him. For a whole year. Today, by the grace of God, James is cancer free.",
+ tiktok="James didn't beat cancer alone. A true story 🙏",
+ yt_title="James Didn't Beat Cancer Alone | A True Story #Shorts",
+ yt_desc="A true story about prayer, family, and never feeling forgotten. When James was diagnosed with cancer, his sons and daughters decided to fast, pray and believe God for a miracle every day. Before every chemotherapy session his phone lit up with notifications from his family praying for him. For a whole year, they showed up in prayer. Today, by the grace of God, James is cancer free.",
+ li="James didn't beat cancer alone.\n\nTwo years ago, James received a diagnosis that changed everything. His faith didn't grow because someone said \"I'll pray for you\" once and moved on. It grew because his family refused to let him face it alone. His sons and daughters decided together to fast, pray and believe God for a miracle, every single day.\n\nBefore every chemotherapy session, his phone lit up with notifications from his daughter, his son, his wife: we are praying for you right now.\n\nFor an entire year, through every treatment and every difficult morning, his family showed up. Consistently. Intentionally. Together.\n\nBy the grace of God, James is cancer free today.\n\nThis is why we built PrayCrew: so no one ever has to feel forgotten.",
+ ig_es="James no venció el cáncer solo. 🙏\n\nUna historia real de oración, familia y de lo que significa nunca sentirse olvidado.\n\nHace dos años, James recibió un diagnóstico que lo cambió todo. Cáncer. Sus hijos e hijas tomaron una decisión juntos: iban a ayunar, iban a orar y le iban a creer a Dios por un milagro. Cada día.\n\nAntes de cada sesión de quimioterapia, el teléfono de James se iluminaba con notificaciones. Su hija. Su hijo. Su esposa. Cada uno diciéndole: estamos orando por ti en este momento.\n\nDurante todo un año, su familia estuvo ahí. No solo en el cuarto. En oración. Con constancia. Con intención. Juntos.\n\nPor la gracia de Dios, James hoy está libre de cáncer.",
+ q_es="¿Quién de tu familia necesita saber hoy que estás orando por él? 👇",
+ x_es="James no venció el cáncer solo. 🙏\n\nAntes de cada quimioterapia, su teléfono se iluminaba: su hija, su hijo, su esposa, orando por él. Durante todo un año. Hoy, por la gracia de Dios, James está libre de cáncer.",
 ),
 }
