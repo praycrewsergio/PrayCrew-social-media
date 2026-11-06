@@ -22,6 +22,7 @@ SERIES = [
  ("2026-11-12", "recap"),
  ("2026-11-16", "smallgroupstory"),
  ("2026-11-23", "churchstory"),
+ ("2026-11-30", "missionsstory"),
 ]
 
 C = {
@@ -240,5 +241,17 @@ C = {
  ig_es="Una iglesia. Un equipo de oración. 🙏\n\nEl equipo de oración se une a un grupo en PrayCrew. La iglesia agrega un formulario de peticiones a su sitio web, y la congregación comparte sus peticiones desde cualquier teléfono o computadora: sin descargar la app, sin crear una cuenta.\n\nEl equipo ora, da seguimiento con texto, nota de voz o video, y quien pidió oración recibe una notificación cada vez. Los líderes ven por qué está orando la comunidad y pueden servirla mejor, como abrir una clase de mayordomía bíblica cuando suben las peticiones por finanzas.\n\nRecibe cada petición. Da seguimiento a cada persona.",
  q_es="Líderes: ¿cómo recibe hoy su iglesia las peticiones de oración? 👇",
  x_es="Tu congregación comparte sus peticiones en el sitio web de la iglesia. Sin app, sin cuenta. 🙏\n\nTu equipo ora, da seguimiento con texto, voz o video, y los líderes ven lo que necesita la comunidad.",
+),
+"missionsstory": dict(
+ ig_en="One mission. Many nations. 🙏\n\nMissionaries serve small groups around the world, and each group shares its prayer requests in its own crew. Back home, the organization assigns prayer warriors to every group. Every prayer reaches the field as a notification, with messages, voice notes and video.\n\nMissionaries see what their community is praying about. Leadership sees every group in one portal: prayer requests, prayers offered, people reached, and real numbers to show donors the impact.\n\nEvery missionary covered in prayer. Every community better understood.",
+ q_en="Do you support missionaries? How do you pray for them today? 👇",
+ x_en="Missionaries around the world, never alone in prayer. 🙏\n\nPrayer warriors back home pray for every group, missionaries see their community's needs, and leaders see the impact in real numbers.",
+ tiktok="How a missions organization covers every missionary in prayer 🙏",
+ yt_title="How a Missions Organization Uses PrayCrew #Shorts",
+ yt_desc="See how a missions organization uses PrayCrew: missionaries and their small groups around the world share prayer requests in their own crews, prayer warriors back home are assigned to every group, every prayer reaches the field as a notification, missionaries see what their community is praying about, and leadership sees every group in one portal with real numbers to show donors and partners the impact.",
+ li="How do you show donors the spiritual impact of your mission work?\n\nWith PrayCrew, missionaries and the small groups they serve share prayer requests in their own crews. Your organization assigns prayer warriors back home to every group, and every prayer reaches the field as a notification, along with messages, voice notes and video.\n\nMissionaries see what their communities are praying about, so they can serve them better. Leadership sees every group in one portal: prayer requests submitted, prayers offered, people receiving prayer and follow-up rates. Real numbers you can share with donors and partners.\n\nEvery missionary covered in prayer. Every community better understood.",
+ ig_es="Una misión. Muchas naciones. 🙏\n\nMisioneros sirven a grupos pequeños alrededor del mundo, y cada grupo comparte sus peticiones en su propio grupo de PrayCrew. Desde casa, la organización asigna guerreros de oración a cada grupo. Cada oración llega al campo como una notificación, con mensajes, notas de voz y video.\n\nLos misioneros ven por qué está orando su comunidad. El liderazgo ve todos los grupos en un solo portal: peticiones, oraciones ofrecidas, personas alcanzadas y números reales para mostrar el impacto a sus donantes.\n\nCada misionero cubierto en oración. Cada comunidad mejor entendida.",
+ q_es="¿Apoyas a misioneros? ¿Cómo oras por ellos hoy? 👇",
+ x_es="Misioneros alrededor del mundo, nunca solos en oración. 🙏\n\nGuerreros de oración oran por cada grupo, los misioneros ven las necesidades de su comunidad y los líderes ven el impacto en números reales.",
 ),
 }
