@@ -21,9 +21,9 @@ SERIES = [
  ("2026-11-11", "smallgroups"),
  ("2026-11-12", "recap"),
  ("2026-11-16", "smallgroupstory"),
- ("2026-11-23", "churchstory"),
- ("2026-11-30", "missionsstory"),
- ("2026-12-07", "globalstory"),
+ ("2026-11-17", "churchstory"),
+ ("2026-11-18", "missionsstory"),
+ ("2026-11-19", "globalstory"),
 ]
 
 C = {
