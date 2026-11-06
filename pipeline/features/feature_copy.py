@@ -21,6 +21,7 @@ SERIES = [
  ("2026-11-11", "smallgroups"),
  ("2026-11-12", "recap"),
  ("2026-11-16", "smallgroupstory"),
+ ("2026-11-23", "churchstory"),
 ]
 
 C = {
@@ -227,5 +228,17 @@ C = {
  ig_es="Un grupo pequeño. Un mes. 🙏\n\nDiez amigos se reúnen alrededor de la mesa y comparten lo que hay en su corazón. Luego cada quien se va a casa… pero la oración no se detiene.\n\nCon PrayCrew reciben una notificación cada vez que alguien ora, dan seguimiento con mensaje, nota de voz o selfie, siguen conectados en un chat privado, y el líder ve lo que el grupo está cargando. Al mes siguiente regresan con oraciones contestadas.\n\nDonde se reúnan dos o tres, hay un PrayCrew. Empieza tu grupo gratis.",
  q_es="¿Tu grupo ora unos por otros entre reuniones? Cuéntanos cómo 👇",
  x_es="Diez amigos comparten sus peticiones alrededor de la mesa. Luego cada quien se va a casa… pero la oración no se detiene. 🙏\n\nAsí es un mes de un grupo pequeño con PrayCrew.",
+),
+"churchstory": dict(
+ ig_en="One church. One prayer team. 🙏\n\nThe prayer team joins a crew in PrayCrew. The church adds a prayer request form to its website, and the congregation shares requests from any phone or computer: no app to download, no account needed.\n\nThe team prays, follows up with a text, voice note or video, and the person who asked is notified every time. Leaders see what the community is praying about and can serve them better, like starting a class on biblical stewardship when finance requests spike.\n\nCollect every request. Follow up with every person.",
+ q_en="Church leaders: how does your church collect prayer requests today? 👇",
+ x_en="Your congregation shares prayer requests on your website. No app, no account. 🙏\n\nYour prayer team prays, follows up by text, voice or video, and leaders see what the community needs.",
+ tiktok="How a church prayer team never misses a request 🙏 No app needed for the congregation",
+ yt_title="How a Church Prayer Team Uses PrayCrew #Shorts",
+ yt_desc="See how a church uses PrayCrew: the prayer team joins a crew, the church adds a prayer request form to its website, the congregation submits requests with no app or account, the team prays and follows up by text, voice note or video, requesters are notified every time, and leaders use prayer topics to serve their community better.",
+ li="How does your church collect prayer requests today? Cards in the pew, an email inbox, a form no one follows up on?\n\nWith PrayCrew, your prayer team works as a crew. Your congregation submits requests through a form on your church website, with no app to download and no account to create. Every request reaches the team, who pray and follow up with a text, voice note or video, and the person who asked is notified each time.\n\nLeaders see the topics their community is bringing to prayer. If finance requests spike, for example, the church can respond with a class on biblical stewardship.\n\nCollect every request. Follow up with every person. Serve your community better.",
+ ig_es="Una iglesia. Un equipo de oración. 🙏\n\nEl equipo de oración se une a un grupo en PrayCrew. La iglesia agrega un formulario de peticiones a su sitio web, y la congregación comparte sus peticiones desde cualquier teléfono o computadora: sin descargar la app, sin crear una cuenta.\n\nEl equipo ora, da seguimiento con texto, nota de voz o video, y quien pidió oración recibe una notificación cada vez. Los líderes ven por qué está orando la comunidad y pueden servirla mejor, como abrir una clase de mayordomía bíblica cuando suben las peticiones por finanzas.\n\nRecibe cada petición. Da seguimiento a cada persona.",
+ q_es="Líderes: ¿cómo recibe hoy su iglesia las peticiones de oración? 👇",
+ x_es="Tu congregación comparte sus peticiones en el sitio web de la iglesia. Sin app, sin cuenta. 🙏\n\nTu equipo ora, da seguimiento con texto, voz o video, y los líderes ven lo que necesita la comunidad.",
 ),
 }
