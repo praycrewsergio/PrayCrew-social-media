@@ -24,6 +24,7 @@ SERIES = [
  ("2026-11-17", "churchstory"),
  ("2026-11-18", "missionsstory"),
  ("2026-11-19", "globalstory"),
+ ("2026-11-20", "creatorstory"),
 ]
 
 C = {
@@ -266,5 +267,17 @@ C = {
  ig_es="Un ministerio. Una audiencia global. 🙏\n\nCon PrayCrew, los guerreros de oración se organizan por región o país. Personas en todo el mundo envían sus peticiones en el formulario web del ministerio, sin app y sin cuenta, y cada petición llega a la región correcta.\n\nUn guerrero ora y da seguimiento personal con mensaje, nota de voz o video. No una respuesta automática: oración intencional, caminando en fe con ellos.\n\nEl ministerio ve oraciones, personas y temas por región en un solo tablero, para entender lo que vive su comunidad y servirla mejor.",
  q_es="Si lideras un ministerio en línea, ¿cómo das seguimiento hoy a las peticiones de oración? 👇",
  x_es="Un ministerio global. Guerreros de oración por región. 🙏\n\nLas personas envían sus peticiones en la web, un guerrero ora y da seguimiento personal, y los líderes ven lo que vive la comunidad.",
+),
+"creatorstory": dict(
+ ig_en="One voice. Thousands listening. 🙏\n\nIf you're a creator or speaker, PrayCrew helps you actually know your community and pray with them.\n\nAdd the prayer form to your website or share a QR code on stage, in your videos and at events. Followers share a request in seconds, with no app needed.\n\nYou and your team pray and follow up personally with a voice note or video, so every follower knows someone is praying for them.\n\nYour dashboard shows what your community needs prayer for, guiding what you pray, speak and create about next. And answered prayers become testimonies to share.",
+ q_en="Creators and speakers: how do you know what your audience is really going through? 👇",
+ x_en="Thousands of followers. Do you know what they're going through? 🙏\n\nWith PrayCrew, followers share prayer requests from your website or a QR code, you pray and follow up personally, and your dashboard shows what your community needs.",
+ tiktok="Creators: don't just grow an audience. Know your community 🙏",
+ yt_title="PrayCrew for Creators & Speakers #Shorts",
+ yt_desc="See how creators and speakers use PrayCrew: an embedded prayer form on their website or a QR code on stage, in videos and at events, personal follow-up by voice note or video, a dashboard that shows which topics their community needs prayer for, and answered prayers collected as testimonies.",
+ li="Creators and speakers reach thousands of people online. But an audience is not the same as a community you know.\n\nWith PrayCrew, followers share prayer requests through a form embedded on the creator's website or a QR code shown on stage, in videos and at events, with no app to download. The creator and their team pray and follow up personally with a voice note or video, creating a unique experience for every follower.\n\nThe dashboard shows the topics the community needs prayer for (anxiety, family, purpose, health, finances), which guides what to pray, speak and create about next. And answered prayers become testimonies to share.\n\nDon't just grow an audience. Know your community.",
+ ig_es="Una voz. Miles escuchando. 🙏\n\nSi eres creador de contenido o conferencista, PrayCrew te ayuda a conocer de verdad a tu comunidad y orar con ella.\n\nAgrega el formulario de oración a tu sitio web o comparte un código QR en el escenario, en tus videos y en tus eventos. Tus seguidores comparten su petición en segundos, sin app.\n\nTú y tu equipo oran y dan seguimiento personal con nota de voz o video, para que cada seguidor sepa que alguien ora por él.\n\nTu tablero muestra por qué necesita oración tu comunidad, para guiar qué orar, predicar y crear después. Y las oraciones contestadas se convierten en testimonios para compartir.",
+ q_es="Creadores y conferencistas: ¿cómo saben lo que realmente vive su audiencia? 👇",
+ x_es="Miles de seguidores. ¿Sabes lo que están viviendo? 🙏\n\nCon PrayCrew, tus seguidores comparten peticiones desde tu sitio web o un QR, tú oras y das seguimiento personal, y tu tablero muestra lo que necesita tu comunidad.",
 ),
 }
