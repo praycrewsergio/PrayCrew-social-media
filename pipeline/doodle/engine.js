@@ -80,6 +80,8 @@ function setTime(t) {
     } else if (it.kind === 'pop') {
       const s = p === 0 ? 0 : (p < 1 ? 1.15 * Math.sin(p * Math.PI / 2) + (p > .7 ? -0.15 * (p - .7) / .3 : 0) : 1);
       it.el.setAttribute('transform', `translate(${it.cx} ${it.cy}) scale(${s}) translate(${-it.cx} ${-it.cy})`);
+    } else if (it.kind === 'count') {
+      const v = Math.round(it.n * e); it.el.textContent = it.prefix + v.toLocaleString('en-US') + it.suffix;
     } else if (it.kind === 'along') {
       const pt = it.path.getPointAtLength(it.len * e);
       it.el.setAttribute('transform', `translate(${pt.x} ${pt.y})`);
@@ -232,5 +234,51 @@ function person(x, y, s, t0, parent, shirt = SHIRTS[0]) {   // front view, waist
   draw(C(x, y - 30 * s, 92 * s, { fill: '#f6dcc4', fillStyle: 'solid', strokeWidth: 4 }), t0 + 0.3, 0.35, g);
   draw(P(`M${x - 46 * s} ${y - 40 * s} C${x - 40 * s} ${y - 90 * s} ${x + 40 * s} ${y - 90 * s} ${x + 46 * s} ${y - 40 * s}`, { stroke: '#5b4636', strokeWidth: 9 }), t0 + 0.5, 0.25, g);
   draw(P(`M${x - 14 * s} ${y - 24 * s} l1 1 M${x + 14 * s} ${y - 24 * s} l1 1 M${x - 14 * s} ${y - 6 * s} Q${x} ${y + 4 * s} ${x + 14 * s} ${y - 6 * s}`, { strokeWidth: 4, roughness: 0.6 }), t0 + 0.7, 0.2, g);
+  return g;
+}
+
+function counter(n, x, y, { size = 120, color = INK, t0 = 0, d = 1.4, prefix = '', suffix = '', parent } = {}) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', x); t.setAttribute('y', y); t.setAttribute('text-anchor', 'middle'); t.setAttribute('dominant-baseline', 'middle');
+  t.setAttribute('font-family', 'Caveat'); t.setAttribute('font-weight', 700); t.setAttribute('font-size', size); t.setAttribute('fill', color);
+  (parent || svg).appendChild(t); items.push({ kind: 'count', el: t, n, prefix, suffix, t0, t1: t0 + d }); return t;
+}
+function globe(x, y, r, t0, parent) {
+  const g = group(parent);
+  draw(C(x, y, 2 * r, { fill: '#dceaf7', fillStyle: 'hachure', hachureGap: 12, strokeWidth: 5 }), t0, 0.7, g);
+  const k = r / 300;
+  const lands = [
+    `M${x - 200 * k} ${y - 150 * k} C${x - 120 * k} ${y - 220 * k} ${x - 40 * k} ${y - 170 * k} ${x - 70 * k} ${y - 90 * k} C${x - 100 * k} ${y - 30 * k} ${x - 60 * k} ${y + 10 * k} ${x - 110 * k} ${y + 40 * k} C${x - 170 * k} ${y + 10 * k} ${x - 230 * k} ${y - 60 * k} ${x - 200 * k} ${y - 150 * k} Z`,
+    `M${x - 90 * k} ${y + 60 * k} C${x - 40 * k} ${y + 50 * k} ${x - 20 * k} ${y + 120 * k} ${x - 60 * k} ${y + 230 * k} C${x - 90 * k} ${y + 200 * k} ${x - 120 * k} ${y + 110 * k} ${x - 90 * k} ${y + 60 * k} Z`,
+    `M${x + 40 * k} ${y - 120 * k} C${x + 120 * k} ${y - 180 * k} ${x + 240 * k} ${y - 120 * k} ${x + 220 * k} ${y - 40 * k} C${x + 200 * k} ${y + 20 * k} ${x + 130 * k} ${y} ${x + 110 * k} ${y + 60 * k} C${x + 120 * k} ${y + 140 * k} ${x + 60 * k} ${y + 170 * k} ${x + 40 * k} ${y + 100 * k} C${x + 20 * k} ${y + 30 * k} ${x - 10 * k} ${y - 60 * k} ${x + 40 * k} ${y - 120 * k} Z`,
+    `M${x + 170 * k} ${y + 120 * k} C${x + 210 * k} ${y + 100 * k} ${x + 250 * k} ${y + 140 * k} ${x + 220 * k} ${y + 180 * k} C${x + 190 * k} ${y + 190 * k} ${x + 150 * k} ${y + 160 * k} ${x + 170 * k} ${y + 120 * k} Z`];
+  lands.forEach((d, i) => draw(P(d, { fill: '#a8cf9a', fillStyle: 'hachure', hachureGap: 9, strokeWidth: 4 }), t0 + 0.5 + i * 0.2, 0.4, g));
+  return g;
+}
+function pin(x, y, t0, color = RED, parent) {
+  const g = group(parent);
+  draw(P(`M${x} ${y} C${x - 10} ${y - 30} ${x - 34} ${y - 44} ${x - 34} ${y - 70} C${x - 34} ${y - 100} ${x + 34} ${y - 100} ${x + 34} ${y - 70} C${x + 34} ${y - 44} ${x + 10} ${y - 30} ${x} ${y} Z`,
+    { fill: color, fillStyle: 'solid', strokeWidth: 3 }), t0, 0.3, g);
+  draw(C(x, y - 70, 22, { fill: '#fff', fillStyle: 'solid', strokeWidth: 2 }), t0 + 0.2, 0.1, g);
+  pop(g, t0, x, y, 0.3); return g;
+}
+function miniGroup(cx, cy, n, t0, parent, r = 95) {   // small table seen from above, n people
+  const g = group(parent);
+  draw(C(cx, cy, r * 1.3, { fill: '#e9d6bd', fillStyle: 'hachure', hachureGap: 10, strokeWidth: 3.5 }), t0, 0.4, g);
+  for (let i = 0; i < n; i++) {
+    const a = -Math.PI / 2 + i * 2 * Math.PI / n, x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r;
+    draw(C(x, y, r * 0.42, { fill: SHIRTS[(i * 3) % 10], fillStyle: 'solid', strokeWidth: 3 }), t0 + 0.3 + i * 0.06, 0.15, g);
+    draw(C(x, y, r * 0.24, { fill: '#5b4636', fillStyle: 'solid', strokeWidth: 2 }), t0 + 0.4 + i * 0.06, 0.1, g);
+  }
+  return g;
+}
+function office(x, y, s, t0, parent) {
+  const g = group(parent);
+  draw(R(x - 150 * s, y - 220 * s, 300 * s, 360 * s, { fill: '#e6e9ee', fillStyle: 'hachure', hachureGap: 12, strokeWidth: 5 }), t0, 0.6, g);
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 3; c++)
+    draw(R(x - 115 * s + c * 85 * s, y - 185 * s + r * 85 * s, 55 * s, 55 * s, { fill: '#bcd6ee', fillStyle: 'solid', strokeWidth: 2.5 }), t0 + 0.4 + (r * 3 + c) * 0.04, 0.12, g);
+  draw(R(x - 35 * s, y + 70 * s, 70 * s, 70 * s, { fill: '#8a5a3c', fillStyle: 'solid', strokeWidth: 3 }), t0 + 0.8, 0.2, g);
+  draw(L(x, y - 220 * s, x, y - 330 * s, { strokeWidth: 4 }), t0 + 0.9, 0.15, g);
+  draw(P(`M${x} ${y - 330 * s} L${x + 70 * s} ${y - 305 * s} L${x} ${y - 280 * s} Z`, { fill: BLUE, fillStyle: 'solid', strokeWidth: 3 }), t0 + 1.0, 0.2, g);
   return g;
 }

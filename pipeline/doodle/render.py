@@ -42,8 +42,12 @@ def scene_file(pg, i, lang, tmp):
     app = info["app"]
     if not app: return raw
     out = os.path.join(tmp, f"a{i:02d}.mp4")
-    src = os.path.join(VID, f"feature_{app['clip']}_{lang}.mp4")
     win = app.get("win") or WIN; cx, cy, cw, chh = app.get("crop") or [186, 400, 708, 1440]
+    if app.get("image"):
+        src = os.path.join(tmp, f"img{i}.mp4"); image_clip(os.path.join(HERE, app["image"]), app["zoom"], win, dur - 0.45, src)
+        cx, cy, cw, chh = 0, 0, win["w"], win["h"]; app = dict(app, st={lang: 0})
+    else:
+        src = os.path.join(VID, f"feature_{app['clip']}_{lang}.mp4")
     rad = app.get("radius", 44)
     mask = os.path.join(tmp, f"mask{i}.png")
     from PIL import Image, ImageDraw
@@ -54,6 +58,18 @@ def scene_file(pg, i, lang, tmp):
         f"fade=t=out:st={dur - 0.3:.2f}:d=0.25:alpha=1[c];[2:v]format=gray[m];[c][m]alphamerge[cm];"
         f"[0:v][cm]overlay={win['x']}:{win['y']}:eof_action=pass,format=yuv420p", *ENC, out], check=True)
     return out
+
+def image_clip(path, zoom, win, dur, out):
+    from PIL import Image
+    im = Image.open(path).convert("RGB"); (a, b) = zoom; n = int(round(dur * FPS))
+    ff = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{win['w']}x{win['h']}",
+                           "-framerate", str(FPS), "-i", "-", *ENC, out], stdin=subprocess.PIPE)
+    for f in range(n):
+        p = min(1, max(0, (f / FPS - 0.8) / max(0.1, dur - 1.6))); p = p * p * (3 - 2 * p)
+        box = [a[k] + (b[k] - a[k]) * p for k in range(4)]
+        fr = im.resize((win["w"], win["h"]), Image.LANCZOS, box=(box[0], box[1], box[0] + box[2], box[1] + box[3]))
+        ff.stdin.write(fr.tobytes())
+    ff.stdin.close(); assert ff.wait() == 0
 
 def full(lang, out):
     tmp = tempfile.mkdtemp(); parts = []
