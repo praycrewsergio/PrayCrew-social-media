@@ -25,6 +25,7 @@ SERIES = [
  ("2026-11-18", "missionsstory"),
  ("2026-11-19", "globalstory"),
  ("2026-11-20", "creatorstory"),
+ ("2026-11-23", "eventstory"),
 ]
 
 C = {
@@ -279,5 +280,17 @@ C = {
  ig_es="Una voz. Miles escuchando. 🙏\n\nSi eres creador de contenido o conferencista, PrayCrew te ayuda a conocer de verdad a tu comunidad y orar con ella.\n\nAgrega el formulario de oración a tu sitio web o comparte un código QR en el escenario, en tus videos y en tus eventos. Tus seguidores comparten su petición en segundos, sin app.\n\nTú y tu equipo oran y dan seguimiento personal con nota de voz o video, para que cada seguidor sepa que alguien ora por él.\n\nTu tablero muestra por qué necesita oración tu comunidad, para guiar qué orar, predicar y crear después. Y las oraciones contestadas se convierten en testimonios para compartir.",
  q_es="Creadores y conferencistas: ¿cómo saben lo que realmente vive su audiencia? 👇",
  x_es="Miles de seguidores. ¿Sabes lo que están viviendo? 🙏\n\nCon PrayCrew, tus seguidores comparten peticiones desde tu sitio web o un QR, tú oras y das seguimiento personal, y tu tablero muestra lo que necesita tu comunidad.",
+),
+"eventstory": dict(
+ ig_en="The event ends. The prayer doesn't. 🙏\n\nArtists and speakers: there may be a prayer team up front, but for the person in the last row, walking up isn't easy. With PrayCrew, everyone can receive prayer.\n\nCreate your prayer ministry and invite your team. Put the QR code on the big screen and embed the form on your website. Attendees share a request in seconds, with no app needed.\n\nYour team prays for every request, and after the event you're still present: personal follow-up with a voice note or video, a unique experience of intentionality.\n\nYou'll better understand what your audience is going through, and collect testimonies of answered prayers.",
+ q_en="Artists and speakers: how do you care for your audience after the event ends? 👇",
+ x_en="The event ends. The prayer doesn't. 🙏\n\nWith PrayCrew, everyone in the room can receive prayer, even the last row. Your team prays, follows up after the event, and you see what your audience is going through.",
+ tiktok="The event ends. The prayer doesn't 🙏 Even the last row can receive prayer",
+ yt_title="PrayCrew for Artists & Speakers at Events #Shorts",
+ yt_desc="See how music artists and speakers use PrayCrew at their events: a QR code on the big screen and a prayer form on their website so everyone can share a request, even the person in the last row. The prayer team prays for every request and follows up after the event with a voice note or video. A dashboard shows what the audience is going through, and answered prayers become testimonies.",
+ li="At a concert or conference, there's often a prayer team up front. But the person sitting in the last row may never walk up.\n\nWith PrayCrew, artists and speakers create a prayer ministry and invite their prayer team. A QR code on the big screen and a form embedded on their website let every attendee share a request in seconds, with no app to download.\n\nThe team prays for each request, and after the event the artist or speaker stays present through prayer: personal follow-up by voice note or video, the next day, a week later, a month later.\n\nThe dashboard shows what each audience needs prayer for, which can shape the next song, message and event. And answered prayers become testimonies.\n\nThe event ends. The prayer continues.",
+ ig_es="El evento termina. La oración no. 🙏\n\nArtistas y conferencistas: puede haber un equipo de oración al frente, pero para la persona en la última fila, pasar al frente no es fácil. Con PrayCrew, todos pueden recibir oración.\n\nCrea tu ministerio de oración e invita a tu equipo. Pon el código QR en la pantalla y agrega el formulario a tu sitio web. Los asistentes comparten su petición en segundos, sin app.\n\nTu equipo ora por cada petición y, después del evento, sigues presente: seguimiento personal con nota de voz o video, una experiencia única de intencionalidad.\n\nEntenderás mejor lo que vive tu audiencia y reunirás testimonios de oraciones contestadas.",
+ q_es="Artistas y conferencistas: ¿cómo cuidan a su audiencia cuando termina el evento? 👇",
+ x_es="El evento termina. La oración no. 🙏\n\nCon PrayCrew, todos en el lugar pueden recibir oración, incluso la última fila. Tu equipo ora, da seguimiento después del evento y tú ves lo que vive tu audiencia.",
 ),
 }
