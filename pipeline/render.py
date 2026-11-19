@@ -44,7 +44,7 @@ def fit(words, fname, start, stop, width, max_h, lh_ratio):
         f = font(fname, size)
         lines = wrap_words(words, f, width)
         lh = int(size * lh_ratio)
-        if len(lines) * lh <= max_h:
+        if len(lines) * lh <= max_h and all(f.getlength(" ".join(ln)) <= width for ln in lines):
             return f, lines, lh
     return f, lines, lh
 
