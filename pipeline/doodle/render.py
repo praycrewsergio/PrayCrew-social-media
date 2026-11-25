@@ -86,10 +86,19 @@ def full(lang, out):
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", joined], check=True)
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", joined], capture_output=True, text=True).stdout)
     part = out[:-4] + ".part.mp4"
-    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", joined, "-stream_loop", "-1", "-i", f"{ASSETS}/music/track{os.environ.get('MUSIC', '4')}.m4a", "-map", "0:v", "-map", "1:a",
-                    "-c:v", "copy", "-af", f"volume=0.8,afade=t=in:d=1,afade=t=out:st={dur - 3:.2f}:d=3", "-c:a", "aac", "-b:a", "160k", "-t", f"{dur:.3f}",
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", joined, "-stream_loop", "-1", "-i", music_file(), "-map", "0:v", "-map", "1:a",
+                    "-c:v", "copy", "-af", music_filter(dur), "-c:a", "aac", "-b:a", "160k", "-t", f"{dur:.3f}",
                     "-movflags", "+faststart", part], check=True)
     os.replace(part, out); shutil.rmtree(tmp); print(out, round(dur, 1))
+
+def music_file():
+    m = os.environ.get('MUSIC', '4')  # a number picks a loop track; a name picks a custom score (e.g. MUSIC=thanks)
+    return f"{ASSETS}/music/track{m}.m4a" if m.isdigit() else f"{ASSETS}/music/{m}.m4a"
+
+def music_filter(dur):
+    if os.environ.get('MUSIC', '4').isdigit():
+        return f"volume=0.8,afade=t=in:d=1,afade=t=out:st={dur - 3:.2f}:d=3"
+    return f"afade=t=out:st={dur - 1.5:.2f}:d=1.5"  # scores are already mixed and timed to the scenes
 
 if __name__ == "__main__":
     if "--stills" in sys.argv: stills(sys.argv[1], sys.argv[sys.argv.index("--stills") + 1])
